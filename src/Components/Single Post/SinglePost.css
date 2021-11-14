@@ -1,0 +1,159 @@
+body {
+    max-width: 1500px;
+    margin: auto;
+}
+
+.single-post {
+    max-width: 700px;
+    width: 100%;
+    margin: 2rem auto;
+}
+
+.author-flex {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.share-btns {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    align-items: center;
+    color: #A2A2A2;
+    font-size: 2rem;
+    opacity: 0.7;
+    margin: 1rem 0;
+
+}
+
+.fab {
+    cursor: pointer;
+}
+
+.author-avatar img {
+    width: 100px;
+}
+
+.author-name {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.author-time {
+    font-size: 16px;
+    color: #A2A2A2;
+}
+
+.author-details-flex {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.single-post-title {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.hero-img-single-post {
+    width: 100%;
+    margin: auto;
+}
+
+.post-para-single {
+    font-size: 21px;
+    margin: 2rem 0;
+}
+
+.post-tags-flex {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+    align-items: center;
+}
+
+.post-tags-flex span {
+
+    background-color: #F2F2F2;
+    padding: 0.5rem;
+    color: #A2A2A2;
+    font-size: 15px;
+}
+
+.claps-flex {
+    font-size: 16px;
+    color: #939393;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.author-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.single-post-more-flex {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3rem;
+}
+
+.thumbanil-img {
+    width: 100% !important;
+}
+
+.single-post-more-flex img {
+    width: 75px;
+}
+
+.related-post-title {
+    font-size: 18px;
+}
+
+hr {
+    color: #F0F0F0
+}
+
+.related-tags-post {
+    font-size: 16px;
+    color: #A2A2A2;
+    margin: 1rem 0;
+}
+
+
+@media screen and (max-width: 700px) {
+    .author-flex {
+        margin: 0;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .author-avatar img {
+        width: 75px;
+    }
+
+    .single-post-more-flex {
+        flex-wrap: wrap;
+    }
+
+    .single-post-title {
+        font-size: 30px;
+        font-weight: 600;
+    }
+}
+
+.position-relative {
+    position: relative;
+}

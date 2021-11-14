@@ -1,0 +1,130 @@
+.Intro-container {
+    max-width: 1600px;
+    width: 100%;
+}
+
+
+.intro {
+    max-width: 1500px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    margin: auto;
+
+    grid-gap: 1rem;
+}
+
+.intro .hero-cover {
+    background-image: url(../../../Images/cover.jpg);
+    background-size: cover;
+    border-radius: 0.5rem;
+    position: relative;
+}
+
+.second-cover-2 {
+    background-image: url(../../../Images/cover.jpg);
+    background-size: cover;
+    height: 300px;
+    position: relative;
+    border-radius: 0.5rem;
+}
+
+
+.second-cover {
+    background-image: url(../../../Images/cover.jpg);
+    background-size: cover;
+    height: 300px;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    position: relative;
+}
+
+.intro .secondary-covers img {
+    max-height: 310px;
+    height: 100%;
+}
+
+img {
+    border-radius: 0.5rem;
+}
+
+.home-hero-title {
+    font-size: 40px;
+    color: white;
+    position: absolute;
+    top: 70%;
+    left: 10%;
+}
+
+.home-hero-title-date {
+    font-size: 18px;
+    color: #FCFCFC;
+    opacity: 0.57;
+    text-align: left;
+}
+
+.home-second-title {
+    font-size: 32px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    text-align: left;
+    left: 5%;
+}
+
+.home-second-title-date {
+    font-size: 18px;
+    color: #FCFCFC;
+    opacity: 0.57;
+    text-align: left;
+}
+
+.home-second-title-2 {
+    font-size: 32px;
+    color: white;
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+}
+
+.home-hero-title-date-2 {
+    font-size: 18px !important;
+    color: #FCFCFC;
+    opacity: 0.57;
+    text-align: left;
+}
+
+
+
+@media screen and (max-width: 970px) {
+
+    .home-second-title-2 {
+        font-size: 25px;
+    }
+
+    .home-second-title {
+        font-size: 25px;
+    }
+
+    .intro {
+        grid-template-columns: 2fr 1fr;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    .intro {
+        grid-template-columns: 1fr;
+
+    }
+
+    .intro .hero-cover {
+        height: 360px;
+    }
+
+    .home-hero-title {
+        font-size: 24px;
+    }
+
+}
