@@ -26,12 +26,10 @@ function LogIn() {
                 <h2 >Welcome Back!</h2>
                 {isValid ? <h2 >Welcome Back!</h2> :
                     <form className="login-form">
-                        {/* <label>Email: </label> */}
                         <input required
                             onChange={e => checkEmail(e.target.value)}
                             placeholder="Enter Your Email" type="email" />
 
-                        {/* <label>Password: </label> */}
                         <input onChange={e => checkPass(e.target.value)}
                             required placeholder="Enter Your Password" type="Password" />
 

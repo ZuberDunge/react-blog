@@ -4,7 +4,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Home from './Components/Home Section/Home';
 import Bollywood from './Components/Bollywood/Bollywood';
 import Technology from './Components/Technology/Technology';
-// import Food from "./Components/Food/Food"
+import Food from "./Components/Food/Food"
 import Travel from "./Components/Travel/Travel"
 import Hollywood from "./Components/Hollywood/Hollywood"
 import SinglePost from './Components/Single Post/SinglePost';
@@ -21,7 +21,13 @@ function App() {
           <Route exact path="/Technology" component={Technology} />
           <Route exact path="/Travel" component={Travel} />
           <Route exact path="/Hollywood" component={Hollywood} />
-          <Route exact path="/Food" component={SinglePost} />
+          <Route exact path="/Food" component={Food} />
+          <Route exact path="/Technology/:id" component={SinglePost} />
+          <Route exact path="/Travel/:id" component={SinglePost} />
+          <Route exact path="/Hollywood/:id" component={SinglePost} />
+          <Route exact path="/Food/:id" component={SinglePost} />
+          <Route exact path="/Bollywood/:id" component={SinglePost} />
+          <Route exact path="/Travel/:id" component={SinglePost} />
           <Route exact path="/GetStarted" component={GetStarted} />
         </Switch>
       </BrowserRouter>

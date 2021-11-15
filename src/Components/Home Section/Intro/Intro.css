@@ -15,10 +15,11 @@
 }
 
 .intro .hero-cover {
-    background-image: url(../../../Images/cover.jpg);
+    background-image: url(../../../Images/rajukamar-weddding.webp);
     background-size: cover;
     border-radius: 0.5rem;
     position: relative;
+
 }
 
 .second-cover-2 {
@@ -53,7 +54,7 @@ img {
     color: white;
     position: absolute;
     top: 70%;
-    left: 10%;
+    left: 5%;
 }
 
 .home-hero-title-date {
@@ -67,6 +68,7 @@ img {
     font-size: 32px;
     color: white;
     position: absolute;
+    overflow-wrap: break-word;
     top: 50%;
     text-align: left;
     left: 5%;
@@ -119,6 +121,14 @@ img {
 
     }
 
+    .second-cover-2 {
+        display: none;
+    }
+
+    .second-cover {
+        display: none;
+    }
+
     .intro .hero-cover {
         height: 360px;
     }
@@ -127,4 +137,10 @@ img {
         font-size: 24px;
     }
 
+}
+
+
+
+.hero-cover a {
+    color: white;
 }

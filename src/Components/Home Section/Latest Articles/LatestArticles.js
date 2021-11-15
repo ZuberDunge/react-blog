@@ -3,6 +3,10 @@ import React from "react";
 import LatestArticlesArray from './LatestArticlesArray';
 import CoverImgSLide from "../../../Images/cover2.jpg"
 import HomeArticlesImage1 from "../../../Images/articles-image.PNG"
+import { useParams, useNavigate, Link } from "react-router-dom";
+
+
+
 
 
 
@@ -11,11 +15,11 @@ function CreateLatestArticles(data) {
         <img src={data.imgURL} alt="kuchbhi" />
         <div className="article-heading-home-flex">
             <div>
-                <div className="latest-post-title-1">
-                    {data.title}     </div>
-                <p>{data.desc}</p>
+                <Link to={`/Bollywood/${data.id}`}> <div className="latest-post-title-1">
+                    {data.title}     </div></Link>
+                <p>{data.desc.substring(0, 150)}</p>
             </div>
-            <div> <span className="latest-home-type">{data.catagery}</span>
+            <div> <span className="latest-home-type">{data.category}</span>
                 <span className="latest-home-date">{data.time}</span>
             </div>
         </div>

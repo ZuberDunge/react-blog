@@ -4,6 +4,7 @@ import NavBar from '../Nav/Nav';
 // import Footer from '../Footer/Footer';
 import LogIn from './LogIn';
 import SignUp from './SignUp';
+
 function GetStarted() {
     const [isNew, setActive] = useState(false)
     const clickHandler = () => setActive((prevState) => !prevState);
