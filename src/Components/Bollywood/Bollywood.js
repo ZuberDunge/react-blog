@@ -1,5 +1,5 @@
 import './Bollywood.css';
-import React, { useState } from "react";
+import React from "react";
 import HomeArticlesImage1 from "../../Images/articles-image.PNG"
 import NavBar from '../Nav/Nav';
 import Footer from '../Footer/Footer';

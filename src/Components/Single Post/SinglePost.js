@@ -1,6 +1,6 @@
 
-import React, { useState } from "react";
-import HomeArticlesImage1 from "../../Images/articles-image.PNG"
+import React from "react";
+
 import NavBar from '../Nav/Nav';
 import Footer from '../Footer/Footer';
 import "./SinglePost.css"
