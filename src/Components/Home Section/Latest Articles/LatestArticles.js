@@ -1,7 +1,27 @@
 import './LatestArticles.css';
-import React, { useState } from "react";
-import HomeArticlesImage1 from "../../../Images/articles-image.PNG"
+import React from "react";
+import LatestArticlesArray from './LatestArticlesArray';
 import CoverImgSLide from "../../../Images/cover2.jpg"
+import HomeArticlesImage1 from "../../../Images/articles-image.PNG"
+
+
+
+function CreateLatestArticles(data) {
+    return <div className="articles-thumbnail">
+        <img src={data.imgURL} alt="kuchbhi" />
+        <div className="article-heading-home-flex">
+            <div>
+                <div className="latest-post-title-1">
+                    {data.title}     </div>
+                <p>{data.desc}</p>
+            </div>
+            <div> <span className="latest-home-type">{data.catagery}</span>
+                <span className="latest-home-date">{data.time}</span>
+            </div>
+        </div>
+
+    </div>
+}
 
 function LatestArticles() {
 
@@ -11,86 +31,13 @@ function LatestArticles() {
             <div className="LatestArticles">
 
                 <div className="articles-left-home">
-                    <div className="articles-thumbnail">
-                        <img src={HomeArticlesImage1} alt="kuchbhi" />
-                        <div className="article-heading-home-flex">
-                            <div>
-                                <div className="latest-post-title-1">
-                                    Joshua Tree Overnight Adventure      </div>
-                                <p>Gujarat is vastly underrated and it’s a mystery to us why the region isn’t more well-known
-                                    as a tourist destination. It has a plethora of temples and palaces</p>
-                            </div>
-                            <div> <span className="latest-home-type">Travel</span> <span className="latest-home-date">/ August 21 2017</span>
-                            </div>
-                        </div>
+                    {LatestArticlesArray.map(CreateLatestArticles)}
 
-                    </div>
 
-                    <div className="articles-thumbnail">
-                        <img src={HomeArticlesImage1} alt="kuchbhi" />
-                        <div className="article-heading-home-flex">
-                            <div>
-                                <div className="latest-post-title-1">
-                                    Joshua Tree Overnight Adventure      </div>
-                                <p>Gujarat is vastly underrated and it’s a mystery to us why the region isn’t more well-known
-                                    as a tourist destination. It has a plethora of temples and palaces</p>
-                            </div>
-                            <div> <span className="latest-home-type">Travel</span> <span className="latest-home-date">/ August 21 2017</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="articles-thumbnail">
-                        <img src={HomeArticlesImage1} alt="kuchbhi" />
-                        <div className="article-heading-home-flex">
-                            <div>
-                                <div className="latest-post-title-1">
-                                    Joshua Tree Overnight Adventure      </div>
-                                <p>Gujarat is vastly underrated and it’s a mystery to us why the region isn’t more well-known
-                                    as a tourist destination. It has a plethora of temples and palaces</p>
-                            </div>
-                            <div> <span className="latest-home-type">Travel</span> <span className="latest-home-date">/ August 21 2017</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="articles-thumbnail">
-                        <img src={HomeArticlesImage1} alt="kuchbhi" />
-                        <div className="article-heading-home-flex">
-                            <div>
-                                <div className="latest-post-title-1">
-                                    Joshua Tree Overnight Adventure      </div>
-                                <p>Gujarat is vastly underrated and it’s a mystery to us why the region isn’t more well-known
-                                    as a tourist destination. It has a plethora of temples and palaces</p>
-                            </div>
-                            <div> <span className="latest-home-type">Travel</span> <span className="latest-home-date">/ August 21 2017</span>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div className="articles-thumbnail">
-                        <img src={HomeArticlesImage1} alt="kuchbhi" />
-                        <div className="article-heading-home-flex">
-                            <div>
-                                <div className="latest-post-title-1">
-                                    Joshua Tree Overnight Adventure      </div>
-                                <p>Gujarat is vastly underrated and it’s a mystery to us why the region isn’t more well-known
-                                    as a tourist destination. It has a plethora of temples and palaces</p>
-                            </div>
-                            <div> <span className="latest-home-type">Travel</span> <span className="latest-home-date">/ August 21 2017</span>
-                            </div>
-                        </div>
-
-                    </div>
                     <div className="load-more"> <i className="fas fa-arrow-down"></i> Load More</div>
 
 
-                    {/* <div className="latest-cover-slide">
-                        <div className="latest-cover-slide-title">
-                            <div>Title of vertical gallery  </div>
-                            <div className="home-hero-title-date">  Travel / August 21 2017  </div>
-                        </div>
-                    </div> */}
+
                     <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="carousel">
                         <div className="carousel-indicators">
                             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
@@ -105,14 +52,14 @@ function LatestArticles() {
                                     <p>Travel / August 21 2017</p>
                                 </div>
                             </div>
-                            <div className="carousel-item">
+                            <div className="carousel-item ">
                                 <img src={CoverImgSLide} className="d-block w-100" alt="alt" />
                                 <div className="carousel-caption d-md-block">
                                     <h5>Title of vertical gallery</h5>
                                     <p>Travel / August 21 2017</p>
                                 </div>
                             </div>
-                            <div className="carousel-item">
+                            <div className="carousel-item ">
                                 <img src={CoverImgSLide} className="d-block w-100" alt="alt" />
                                 <div className="carousel-caption d-md-block">
                                     <h5>Title of vertical gallery</h5>
@@ -133,7 +80,7 @@ function LatestArticles() {
                 </div>
                 <div className="articles-right-home">
 
-                    <div className="advertisement-box">Advertisement</div>
+                    <div className="advertisement-box-blog">Advertisement</div>
 
                     <br />
                     <div className="heading-home-latest" >Top Posts</div>

@@ -1,6 +1,11 @@
 import './Nav.css';
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom"
+import Navlinks from "./Navlinks"
+
+function createNavLink(Navlink) {
+    return <li><NavLink exact to={Navlink.to} activeClassName="active">{Navlink.name}</NavLink></li>
+}
 
 function NavBar() {
     const [isactive, setActive] = useState(false)
@@ -17,27 +22,7 @@ function NavBar() {
                     <div onClick={clickHandler}><i className="fas menu-btn fa-bars" ></i> </div>
 
                     <ul className={isactive ? "show" : ""}>
-                        <li>
-                            <NavLink exact to="/" activeClassName="active"  >Home</NavLink>
-                        </li>
-                        <li>
-                            <NavLink to="/Bollywood" activeClassName="active"  >Bollywood</NavLink>
-                        </li>
-                        <li>
-                            <NavLink to="/Technology" activeClassName="active"  >Technology</NavLink>
-                        </li>
-                        <li>
-                            <NavLink to="/Hollywood" activeClassName="active"  >Hollywood</NavLink>
-                        </li>
-                        <li>
-                            <NavLink to="/Travel" activeClassName="active"  >Travel</NavLink>
-                        </li>
-                        <li>
-                            <NavLink to="/Food" activeClassName="active"  >Food</NavLink>
-                        </li>
-                        <li>
-                            <NavLink to="/Get-Started" activeClassName="active"  >Get Started</NavLink>
-                        </li>
+                        {Navlinks.map(createNavLink)}
                     </ul>
 
                 </div>
