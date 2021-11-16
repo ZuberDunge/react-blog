@@ -1,14 +1,17 @@
 import './Latest.css';
 import React from "react";
 
+import { Link } from "react-router-dom";
 import LatestArray from './LatestArray';
 import LatestArticlesArray from '../Latest Articles/LatestArticlesArray';
 
 function createCards(card) {
     return <div className="home-latest-post">
         <img src={card.imgURL} alt="latest post" />
-        <div className="latest-post-title-1">
-            {card.title}    </div>
+
+        <Link to={`/${card.category}/${card.id}`}> <div className="latest-post-title-1">
+            {card.title}     </div></Link>
+
         <p> {card.desc.substring(0, 150)}</p>
         <div>
             <span className="latest-home-type"> {card.category}</span> <span className="latest-home-date"> {card.time}</span>

@@ -24,6 +24,7 @@ function App() {
           <Route exact path="/Food" component={Food} />
           <Route exact path="/Technology/:id" component={SinglePost} />
           <Route exact path="/Travel/:id" component={SinglePost} />
+          <Route exact path="/:category/:id" component={SinglePost} />
           <Route exact path="/Hollywood/:id" component={SinglePost} />
           <Route exact path="/Food/:id" component={SinglePost} />
           <Route exact path="/Bollywood/:id" component={SinglePost} />

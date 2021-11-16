@@ -8,8 +8,18 @@ import LatestArticlesArray from '../Latest Articles/LatestArticlesArray';
 
 function createHeroCover(Data) {
     return <div className="home-hero-title">
-        <Link to={`/Travel/${Data.id}`}> <div>{Data.title} </div></Link>
+        <Link to={`/${Data.category}/${Data.id}`}> <div>{Data.title} </div></Link>
         <div className="home-hero-title-date">{Data.time}</div>
+    </div>
+}
+
+function createSecondaryHeroCover(Data) {
+    return <div className="second-cover">
+        <img className="second-cover-gird-img" src={Data.imgURL} alt="cover=2" />
+        <div className="home-second-title">
+            <Link to={`/${Data.category}/${Data.id}`}> <div>{Data.title} </div></Link>
+            <div className="home-hero-title-date">  {Data.category} {Data.time} </div>
+        </div>
     </div>
 
 }
@@ -21,7 +31,7 @@ function Intro() {
 
                 <div className="hero-cover">
                     {LatestArticlesArray.filter(function (creature) {
-                        return creature.category == "Bollywood"
+                        return creature.id == 0
                     }).map(createHeroCover)}
                     {/* <div className="home-hero-title">
                         <Link to={`/Travel/${LatestArticlesArray[0].id}`}> <div>{LatestArticlesArray[0].title} </div></Link>
@@ -29,20 +39,9 @@ function Intro() {
                     </div> */}
 
                 </div>
-                <div className="secondary-covers">
-                    <div className="second-cover-2">
-                        <div className="home-second-title">
-                            <div>Title of vertical gallery Title of vertical gallery </div>
-                            <div className="home-hero-title-date">  Travel / August 21 2017  </div>
-                        </div>
-                    </div>
-                    <div className="second-cover">
-                        <div className="home-second-title">
-                            <div>Title of vertical gallery  </div>
-                            <div className="home-hero-title-date">  Travel / August 21 2017  </div>
-                        </div>
-                    </div>
-                </div>
+
+
+                {LatestArticlesArray.slice(1, 3).map(createSecondaryHeroCover)}
 
 
 

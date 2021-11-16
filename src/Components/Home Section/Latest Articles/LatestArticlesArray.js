@@ -46,6 +46,17 @@ const LatestArticlesArray = [
         tags: ["Crypto", "India"],
         readtime: "5 mins read"
     },
+    {
+        id: 4,
+        author: "Shreya Tinkhede",
+        imgURL: "https://media.istockphoto.com/photos/hands-of-cook-photographing-mexican-tacos-picture-id1241881284?k=20&m=1241881284&s=170667a&w=0&h=ffaDRwD-w86TgaUuIieNFQTkSj5G-OtnRvuwcN3kguY=",
+        title: "Food bloggers in city creating buzz on social media",
+        desc: "Nagpur : Food Instagramming is becoming a popular trend in the city and the youth are making  the most of it. <br />The love for food and photography can bring you to food blogging  and some youngsters in town have taken the game onto a whole new level with variety of  food pictures and videos making it to their Instagram feed. A snap of cheese-burst pizza   to street-style pani puri they have got it all covered and you may want to        visit their social media handles before planning an outing.Neha Rahate, who started food   blogging in Nagpur in 2015, is a doctor. Her passion for food brought her into this    creative field. Her Instagram page Tongue and Scissors and has more than 23,000 followers. CI was          the first food blogger in Nagpur. I love the kind of response the audience here has given me on          my page. The turning point for me was when I got featured in Femina9,she said.Shubhra Paul, from          Gastronomicjournal, has over 27,000 followers on her Instagram food page. She started almost a year          back and gets a massive response of food lovers drooling over some tempting food pictures on her feed.           CI have always been a big-time foodie. I weighted around 70kg a few years back. I sweated hard and            reduced my weight by around 30kg. My passion for food hasn't dropped though.            I have maintained a healthy balance between my passion and physical health by             working hard on my fitness. I love my work and am planning to start a YouTube             channel soon, she said.Parth Bajaj, who also runs a YouTube channel, has             recently made a kitchen studio and has over 42,000 food lovers following him. His interest             lies in food blogging, styling and photography, and is also a self-taught baker. CI want to make             blogging as my full time profession. Food culture in Nagpur has changed so much and now there are             a variety of new places to go and try out new food. I absolutely love my work and food always makes             me happy, said Parth.Girly and Gluttony belongs to an aspiring mechanical engineer Twinkle Borkar             who is marching towards 13,000 followers. Her feed has a good amount of sweet and savoury food              pictures on display from mocktails to goti soda and gourmet to street food. During my               college days, I started exploring new eateries in Nagpur, clicking picture of the dish and saving it, slowly I realized I have so many pictures of food in my gallery, on a suggestion of one of my friends I started my blog page. I enjoy blogging, it reveals my girlie personality ,said Twinkle.",
+        category: "Food",
+        time: " /Jul 1, 2019",
+        tags: ["Food", "India"],
+        readtime: "6 mins read"
+    },
 
 ]
 

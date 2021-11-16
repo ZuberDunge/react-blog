@@ -17,6 +17,20 @@ import { useEffect, useState } from "react";
 function SinglePost() {
     const { id } = useParams();
     const [blog, setblog] = useState(null)
+    const [clicked, setclicked] = useState(false);
+    var [counter, setcounter] = useState(85)
+
+    const counterHandler = () => {
+        setclicked(!clicked)
+        console.log(clicked);
+
+        if (clicked) {
+            setcounter(counter + 1)
+        } else {
+            setcounter(counter - 1)
+        }
+
+    }
 
     useEffect(() => {
         let blog = LatestArticlesArray.find(blog => blog.id === parseInt(id))
@@ -72,8 +86,8 @@ function SinglePost() {
                             </div>
 
                             <div className="claps-flex">
-                                <img src={ClapImage} alt="likes" />
-                                <span>0 Claps</span>
+                                <img onClick={counterHandler} src={ClapImage} alt="likes" />
+                                <span>{counter} Claps</span>
                             </div>
 
 

@@ -15,7 +15,7 @@ function CreateLatestArticles(data) {
         <img src={data.imgURL} alt="kuchbhi" />
         <div className="article-heading-home-flex">
             <div>
-                <Link to={`/Bollywood/${data.id}`}> <div className="latest-post-title-1">
+                <Link to={`/${data.category}/${data.id}`}> <div className="latest-post-title-1">
                     {data.title}     </div></Link>
                 <p>{data.desc.substring(0, 150)}</p>
             </div>
@@ -25,6 +25,11 @@ function CreateLatestArticles(data) {
         </div>
 
     </div>
+}
+
+
+function showMore() {
+    LatestArticlesArray.slice(2, 4).map(CreateLatestArticles)
 }
 
 function LatestArticles() {
@@ -38,7 +43,7 @@ function LatestArticles() {
                     {LatestArticlesArray.map(CreateLatestArticles)}
 
 
-                    <div className="load-more"> <i className="fas fa-arrow-down"></i> Load More</div>
+                    <div onClick={showMore} className="load-more"> <i className="fas fa-arrow-down"></i> Load More</div>
 
 
 
@@ -50,24 +55,24 @@ function LatestArticles() {
                         </div>
                         <div className="carousel-inner">
                             <div className="carousel-item active">
-                                <img src={CoverImgSLide} className="d-block w-100" alt="alt" />
+                                <img className="low-brigtness" src={LatestArticlesArray[0].imgURL} className="d-block w-100" alt="alt" />
                                 <div className="carousel-caption d-md-block">
-                                    <h5>Title of vertical gallery</h5>
-                                    <p>Travel / August 21 2017</p>
+                                    <Link to={`/${LatestArticlesArray[0].category}/${LatestArticlesArray[0].id}`}> <h5>{LatestArticlesArray[0].title}</h5></Link>
+                                    <p>{LatestArticlesArray[0].category} {LatestArticlesArray[0].time}</p>
                                 </div>
                             </div>
                             <div className="carousel-item ">
-                                <img src={CoverImgSLide} className="d-block w-100" alt="alt" />
+                                <img className="low-brigtness" src={LatestArticlesArray[1].imgURL} className="d-block w-100" alt="alt" />
                                 <div className="carousel-caption d-md-block">
-                                    <h5>Title of vertical gallery</h5>
-                                    <p>Travel / August 21 2017</p>
+                                    <Link to={`/${LatestArticlesArray[1].category}/${LatestArticlesArray[1].id}`}> <h5>{LatestArticlesArray[1].title}</h5></Link>
+                                    <p>{LatestArticlesArray[1].category} {LatestArticlesArray[1].time}</p>
                                 </div>
                             </div>
                             <div className="carousel-item ">
-                                <img src={CoverImgSLide} className="d-block w-100" alt="alt" />
+                                <img className="low-brigtness" src={LatestArticlesArray[2].imgURL} className="d-block w-100" alt="alt" />
                                 <div className="carousel-caption d-md-block">
-                                    <h5>Title of vertical gallery</h5>
-                                    <p>Travel / August 21 2017</p>
+                                    <Link to={`/${LatestArticlesArray[2].category}/${LatestArticlesArray[2].id}`}> <h5>{LatestArticlesArray[2].title}</h5></Link>
+                                    <p>{LatestArticlesArray[2].category} {LatestArticlesArray[2].time}</p>
                                 </div>
                             </div>
                         </div>

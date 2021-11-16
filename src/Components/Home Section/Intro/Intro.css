@@ -5,14 +5,34 @@
 
 
 .intro {
+    max-height: 600px;
+    height: 100%;
     max-width: 1500px;
     width: 100%;
+    margin: auto;
+    gap: 16px 16px;
     display: grid;
     grid-template-columns: 5fr 2fr;
-    margin: auto;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem 1rem;
 
-    grid-gap: 1rem;
 }
+
+.intro a {
+    color: white;
+}
+
+
+.hero-cover {
+    grid-row-start: 1;
+    grid-column-start: 1;
+
+    grid-row-end: 3;
+    grid-column-end: 2;
+
+}
+
+
 
 .intro .hero-cover {
     background-image: url(../../../Images/rajukamar-weddding.webp);
@@ -22,22 +42,27 @@
 
 }
 
-.second-cover-2 {
+/* .second-cover-2 {
     background-image: url(../../../Images/cover.jpg);
     background-size: cover;
     height: 300px;
     position: relative;
     border-radius: 0.5rem;
-}
+} */
 
 
 .second-cover {
-    background-image: url(../../../Images/cover.jpg);
-    background-size: cover;
-    height: 300px;
-    margin-top: 1rem;
+    /* background-image: url(../../../Images/cover.jpg);
+    background-size: cover; */
+    max-height: 300px;
+    /* margin-top: 1rem; */
     border-radius: 0.5rem;
     position: relative;
+}
+
+.second-cover-gird-img {
+    width: 100%;
+    filter: brightness(0.3);
 }
 
 .intro .secondary-covers img {

@@ -228,3 +228,19 @@ a {
     text-decoration: none;
 
 }
+
+.low-brigtness {
+    filter: brightness(0.3) !important;
+}
+
+#carouselExampleCaptions img {
+    filter: brightness(0.3) !important;
+}
+
+#carouselExampleCaptions a {
+    color: white;
+}
+
+#carouselExampleCaptions p {
+    font-weight: 500 !important;
+}
