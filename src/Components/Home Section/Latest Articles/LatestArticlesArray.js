@@ -70,17 +70,6 @@ const LatestArticlesArray = [
     },
     {
         id: 6,
-        author: "Hungama Music",
-        imgURL: "https://stat1.bollywoodhungama.in/wp-content/uploads/2021/11/Sooryavanshi-17-1.jpg",
-        title: "Sooryavanshi becomes Akshay Kumar’s 3rd highest all time second weekend grosser",
-        desc: "The Akshay Kumar starrer Sooryavanshi released a while back, and since then the film has been doing brisk business at the box office. After opening to a thunderous response from the audience, the business of the film saw good growth as the days progressed. Being the first big ticket Bollywood entertainer to hit screens post the second lockdown, expectations from the film were at an all-time high. Not surprisingly, Sooryavanshi that saw a release across 3000+ screens, has surpassed expectations. In this box office report, we take a look at the second weekend collections of Sooryavanshi while comparing the same to Akshay Kumar’s previous releases that have made it to their second weekend in theatres. Collecting Rs. 30.57 cr, Sooryavanshi has become Akshay’s third highest second weekend grosser. Though the business of the film does not surpass the collections of Akshay’s previous releases like Mission Mangal that collected Rs. 36.45 cr, and Good Newwz that collected Rs. 34.20 cr. However, the business of the film surpassed the actor’s other releases like Housefull 4 that collected Rs. 29.98 cr, 2.0 that collected Rs. 27 cr, Holiday – A Soldier Is Never Off Duty that collected Rs. 19.52 cr, Airlift that collected Rs. 19.26 cr, Kesari that collected Rs. 19.15 cr, Toilet – Ek Prem Katha that collected Rs. 19 cr, and Jolly LLB 2 that had collected Rs. 17.73 cr.",
-        category: "Bollywood",
-        time: " /November 16, 2021",
-        tags: ["Bollywood", "AkshayKumar"],
-        readtime: "4 mins read"
-    },
-    {
-        id: 7,
         author: "Robin",
         imgURL: "https://static.toiimg.com/photo/msid-85122780/85122780.jpg?305039",
         title: "Taylor Swift Winning Hearts : Red (Taylor’s Version) Released",
@@ -88,6 +77,17 @@ const LatestArticlesArray = [
         category: "Hollywood",
         time: " /November 16, 2021",
         tags: ["Hollywood", "Music"],
+        readtime: "4 mins read"
+    },
+    {
+        id: 7,
+        author: "Hungama Music",
+        imgURL: "https://stat1.bollywoodhungama.in/wp-content/uploads/2021/11/Sooryavanshi-17-1.jpg",
+        title: "Sooryavanshi becomes Akshay Kumar’s 3rd highest all time second weekend grosser",
+        desc: "The Akshay Kumar starrer Sooryavanshi released a while back, and since then the film has been doing brisk business at the box office. After opening to a thunderous response from the audience, the business of the film saw good growth as the days progressed. Being the first big ticket Bollywood entertainer to hit screens post the second lockdown, expectations from the film were at an all-time high. Not surprisingly, Sooryavanshi that saw a release across 3000+ screens, has surpassed expectations. In this box office report, we take a look at the second weekend collections of Sooryavanshi while comparing the same to Akshay Kumar’s previous releases that have made it to their second weekend in theatres. Collecting Rs. 30.57 cr, Sooryavanshi has become Akshay’s third highest second weekend grosser. Though the business of the film does not surpass the collections of Akshay’s previous releases like Mission Mangal that collected Rs. 36.45 cr, and Good Newwz that collected Rs. 34.20 cr. However, the business of the film surpassed the actor’s other releases like Housefull 4 that collected Rs. 29.98 cr, 2.0 that collected Rs. 27 cr, Holiday – A Soldier Is Never Off Duty that collected Rs. 19.52 cr, Airlift that collected Rs. 19.26 cr, Kesari that collected Rs. 19.15 cr, Toilet – Ek Prem Katha that collected Rs. 19 cr, and Jolly LLB 2 that had collected Rs. 17.73 cr.",
+        category: "Bollywood",
+        time: " /November 16, 2021",
+        tags: ["Bollywood", "AkshayKumar"],
         readtime: "4 mins read"
     },
     {
