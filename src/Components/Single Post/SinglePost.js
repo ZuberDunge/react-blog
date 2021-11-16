@@ -1,6 +1,5 @@
 
 import React from "react";
-
 import NavBar from '../Nav/Nav';
 import Footer from '../Footer/Footer';
 import "./SinglePost.css"
@@ -12,6 +11,40 @@ import LatestImage1 from "../../Images/sub-latest-single.PNG"
 import { useParams, useNavigate, Link } from "react-router-dom";
 import LatestArticlesArray from "../Home Section/Latest Articles/LatestArticlesArray";
 import { useEffect, useState } from "react";
+
+
+function componentDidMount() {
+    window.scrollTo(0, 0);
+}
+componentDidMount()
+
+function relatedCards(data) {
+    return <div className="home-latest-post">
+        <div className="related-tags-post">
+        </div>
+        <img className="thumbanil-img" src={data.imgURL} alt="latest post" />
+        <Link onClick={componentDidMount} to={`/${data.category}/${data.id}`}>
+            <div className="latest-post-title-1">
+                {data.title}
+            </div>
+        </Link>
+
+        <div className="author-details-flex">
+            <div className="author-avatar">
+                <img src={AuthorAvatar} alt="avatar" />
+            </div>
+            <div className="author-details">
+                <div className="author-name">
+                    {data.author}
+                </div>
+                <div className="author-time">
+                    {data.time} · {data.readtime}
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
 
 
 function SinglePost() {
@@ -103,7 +136,7 @@ function SinglePost() {
                                         {blog.author}
                                     </div>
                                     <div className="author-time">
-                                        {blog.time} · 10 min read
+                                        {blog.time} · {blog.readtime}
                                     </div>
                                 </div>
 
@@ -116,75 +149,8 @@ function SinglePost() {
                     <hr />
                     <div className="single-post-more-flex">
 
-                        <div className="home-latest-post">
-                            <div className="related-tags-post">
-                                Also tagged Reactjs
-                            </div>
-                            <img className="thumbanil-img" src={LatestImage1} alt="latest post" />
-                            <div className="latest-post-title-1">
-                                Joshua Tree Overnight Adventure      </div>
+                        {LatestArticlesArray.slice(1, 4).map(relatedCards)}
 
-                            <div className="author-details-flex">
-                                <div className="author-avatar">
-                                    <img src={AuthorAvatar} alt="avatar" />
-                                </div>
-                                <div className="author-details">
-                                    <div className="author-name">
-                                        Jake Peralta
-                                    </div>
-                                    <div className="author-time">
-                                        Jan 28, 2019 · 10 min read
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="home-latest-post">
-                            <div className="related-tags-post">
-                                Related reads
-                            </div>
-                            <img className="thumbanil-img" src={LatestImage1} alt="latest post" />
-                            <div className="latest-post-title-1">
-                                Joshua Tree Overnight Adventure
-                            </div>
-                            <div className="author-details-flex">
-                                <div className="author-avatar">
-                                    <img src={AuthorAvatar} alt="avatar" />
-                                </div>
-                                <div className="author-details">
-                                    <div className="author-name">
-                                        Jake Peralta
-                                    </div>
-                                    <div className="author-time">
-                                        Jan 28, 2019 · 10 min read
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div className="home-latest-post">
-                            <div className="related-tags-post">
-                                Related reads
-                            </div>
-                            <img className="thumbanil-img" src={LatestImage1} alt="latest post" />
-                            <div className="latest-post-title-1">
-                                Joshua Tree Overnight Adventure
-                            </div>
-                            <div className="author-details-flex">
-                                <div className="author-avatar">
-                                    <img src={AuthorAvatar} alt="avatar" />
-                                </div>
-                                <div className="author-details">
-                                    <div className="author-name">
-                                        Jake Peralta
-                                    </div>
-                                    <div className="author-time">
-                                        Jan 28, 2019 · 10 min read
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
                     </div>
 
                 </> : null

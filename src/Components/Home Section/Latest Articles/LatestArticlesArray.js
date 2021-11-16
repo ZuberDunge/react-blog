@@ -57,6 +57,50 @@ const LatestArticlesArray = [
         tags: ["Food", "India"],
         readtime: "6 mins read"
     },
+    {
+        id: 5,
+        author: "Alex",
+        imgURL: "https://www.raconteur.net/wp-content/uploads/2016/11/India-smart-cities-1280x720.jpg",
+        title: "EARNING ABROAD: CANYON GUIDING IN INDIA",
+        desc: "Welcome to Earning Abroad! In this series I’ll introduce you to some inspiring and ambitious friends I’ve met on the road — friends who have found viable work away from their home countries.  Do you guys read Further Bound? If not, I recommend adding it to your reading list immediately. After years of mutual blog fandom, Further Bound author Hannah and I finally met during my last trip to London. We hit it off immediately and I was thrilled when we bumped back into each other once again during my latest trip to Indonesia. This time, I also met Hannah’s charming Scottish partner, Lee Vine. Over dinner at the local market, Lee mentioned his adventures as a canyoning guide in India, a decision he perhaps regretted when I started pestering him for an interview. Ever wonder what it’s like to spend your days leading high-adrenaline outdoor adventures? Over to Lee to find out!",
+        category: "Travel",
+        time: " /Feb 7, 2021",
+        tags: ["Travel", "India"],
+        readtime: "4 mins read"
+    },
+    {
+        id: 6,
+        author: "Hungama Music",
+        imgURL: "https://stat1.bollywoodhungama.in/wp-content/uploads/2021/11/Sooryavanshi-17-1.jpg",
+        title: "Sooryavanshi becomes Akshay Kumar’s 3rd highest all time second weekend grosser",
+        desc: "The Akshay Kumar starrer Sooryavanshi released a while back, and since then the film has been doing brisk business at the box office. After opening to a thunderous response from the audience, the business of the film saw good growth as the days progressed. Being the first big ticket Bollywood entertainer to hit screens post the second lockdown, expectations from the film were at an all-time high. Not surprisingly, Sooryavanshi that saw a release across 3000+ screens, has surpassed expectations. In this box office report, we take a look at the second weekend collections of Sooryavanshi while comparing the same to Akshay Kumar’s previous releases that have made it to their second weekend in theatres. Collecting Rs. 30.57 cr, Sooryavanshi has become Akshay’s third highest second weekend grosser. Though the business of the film does not surpass the collections of Akshay’s previous releases like Mission Mangal that collected Rs. 36.45 cr, and Good Newwz that collected Rs. 34.20 cr. However, the business of the film surpassed the actor’s other releases like Housefull 4 that collected Rs. 29.98 cr, 2.0 that collected Rs. 27 cr, Holiday – A Soldier Is Never Off Duty that collected Rs. 19.52 cr, Airlift that collected Rs. 19.26 cr, Kesari that collected Rs. 19.15 cr, Toilet – Ek Prem Katha that collected Rs. 19 cr, and Jolly LLB 2 that had collected Rs. 17.73 cr.",
+        category: "Bollywood",
+        time: " /November 16, 2021",
+        tags: ["Bollywood", "AkshayKumar"],
+        readtime: "4 mins read"
+    },
+    {
+        id: 7,
+        author: "Robin",
+        imgURL: "https://static.toiimg.com/photo/msid-85122780/85122780.jpg?305039",
+        title: "Taylor Swift Winning Hearts : Red (Taylor’s Version) Released",
+        desc: "If you haven’t listened to Red, recently or ever, it’s well worth your time; in its ecstatic, expressive vocals, tart humor, vivid imagery, and tender attention to the nuances of love and loss, you’ll find everything that makes Taylor Swift great. But the real draw for her main audience, who already know Red like the back of their hands, is the new material. Some of it is new only in the sense of being newly attached to this album or newly reclaimed by Taylor: “Ronan” was a one-off charity single in 2012; Little Big Town recorded “Better Man,” a stolen rearview glance on the drive away from toxic love, in 2016; and the venom-laced air kiss “Babe” was released by the country duo Sugarland in 2018. Most anticipated is an extended cut of a classic: “All Too Well,” a Red track with an outsize presence in Swift lore.",
+        category: "Hollywood",
+        time: " /November 16, 2021",
+        tags: ["Hollywood", "Music"],
+        readtime: "4 mins read"
+    },
+    {
+        id: 8,
+        author: "NDTV",
+        imgURL: "https://simpleflying.com/wp-content/uploads/2021/11/American-Airlines-Boeing-777-323ER-N732AN-1-1-1000x800.jpg",
+        title: "American Airlines Bets On 'One Of The Biggest Untapped Markets'- India",
+        desc: "New Delhi: American Airlines relaunched flights to India this week, nearly a decade after stopping them, looking to capitalise on growing demand for non-stop travel amid the coronavirus pandemic, a senior executive of the airline told Reuters.        With travel demand bouncing back at home, American Airlines wants to expand its international network and India was 'one of the biggest untapped markets' for it, said Tom Lattig, managing director of EMEA sales. 'A lot of customers really want to fly non- stop, particularly as we've come through the pandemic. We know there is huge demand for travel between India and the United States so there is an opportunity right now in the middle of the pandemic to come back,' Lattig said in an interview in New Delhi.       American Airlines, which suspended services to India in 2012, started flying between New Delhi and New York on the weekend and will add flights between India's tech city of Bengaluru and Seattle in March.If it succeeds with those two routes, it will add services to India's financial capital of Mumbai, Lattig said.",
+        category: "Travel",
+        time: " /November 14, 2021",
+        tags: ["Travel", "AirLines"],
+        readtime: "6 mins read"
+    },
 
 ]
 

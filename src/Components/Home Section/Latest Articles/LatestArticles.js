@@ -40,7 +40,7 @@ function LatestArticles() {
             <div className="LatestArticles">
 
                 <div className="articles-left-home">
-                    {LatestArticlesArray.map(CreateLatestArticles)}
+                    {LatestArticlesArray.slice(1, 6).map(CreateLatestArticles)}
 
 
                     <div onClick={showMore} className="load-more"> <i className="fas fa-arrow-down"></i> Load More</div>

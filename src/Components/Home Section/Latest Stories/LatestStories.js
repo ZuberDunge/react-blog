@@ -1,6 +1,23 @@
 import './LatestStories.css';
 import React from "react";
 import LatestImage1 from "../../../Images/sub-latest.PNG"
+import LatestArticlesArray from '../Latest Articles/LatestArticlesArray';
+import { Link } from 'react-router-dom';
+function createCards(data) {
+    return <div className="home-latest-post">
+
+        <img src={data.imgURL} alt="latest post" />
+
+        <Link to={`/${data.category}/${data.id}`}> <div className="latest-post-title-1">{data.title} </div></Link>
+        <p>{data.desc.substring(0, 150)}   </p>
+        <div>
+            <span className="latest-home-type">{data.category}
+            </span> <span className="latest-home-date">{data.time}   </span>
+        </div>
+    </div>
+}
+
+
 
 
 function LatestStories() {
@@ -12,36 +29,10 @@ function LatestStories() {
                 <div className="heading-home-latest">Latest Stories</div>
 
                 <div className="home-latest-stories-flex">
-                    <div className="home-latest-post">
 
-                        <img src={LatestImage1} alt="latest post" />
-                        <div className="latest-post-title-1">
-                            Catch waves with an adventure guide      </div>
-                        <p>Gujarat is vastly underrated and it’s a mystery to us why the region isn’t more well-known as a tourist destination. It has a plethora of temples and palaces Gujarat is vastly underrated and it’s a mystery to us why the region isn’t more well-known as a tourist destination. It has a plethora of temples and palaces</p>
-                        <div>
-                            <span className="latest-home-type">TECH</span> <span className="latest-home-date">/ August 21 2017</span>
-                        </div>
-                    </div>
-                    <div className="home-latest-post">
 
-                        <img src={LatestImage1} alt="latest post" />
-                        <div className="latest-post-title-1">
-                            Catch waves with an adventure guide
-                        </div>
-                        <p>GGujarat is vastly underrated and it’s a mystery to us why the region isn’t more well-known as a tourist destination. It has a plethora of temples and palaces Gujarat is vastly underrated and it’s a mystery to us why the region isn’t more well-known as a tourist destination. It has a plethora of temples and palaces</p>
-                        <div> <span className="latest-home-type">STYLE</span> <span className="latest-home-date">/ August 21 2017</span>
-                        </div>
-                    </div>
 
-                    <div className="home-latest-post">
-                        <img src={LatestImage1} alt="latest post" />
-                        <div className="latest-post-title-1">
-                            Catch waves with an adventure guide
-                        </div>
-                        <p>Gujarat is vastly underrated and it’s a mystery to us why the region isn’t more well-known as a tourist destination. It has a plethora of temples and palaces Gujarat is vastly underrated and it’s a mystery to us why the region isn’t more well-known as a tourist destination. It has a plethora of temples and palaces</p>
-                        <div> <span className="latest-home-type">Travel</span> <span className="latest-home-date">/ August 21 2017</span>
-                        </div>
-                    </div>
+                    {LatestArticlesArray.slice(1, 4).map(createCards)}
                 </div>
             </div>
         </div >
