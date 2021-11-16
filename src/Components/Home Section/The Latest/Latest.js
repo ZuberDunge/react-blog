@@ -24,7 +24,7 @@ function Latest() {
         <div className="latest-Container">
             <div className="latest">
 
-                <div className="heading-home-latest">The Latest</div>
+                <div className="heading-home-latest border-btm">The Latest</div>
 
                 <div className="home-latest-flex">
                     {LatestArticlesArray.slice(6).map(createCards)}

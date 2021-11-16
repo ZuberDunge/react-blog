@@ -38,7 +38,7 @@ function Hollywood() {
                 <div className="LatestArticles">
 
                     <div className="articles-left-home">
-                        <div className="heading-home-latest">Hollywood</div>
+                        <div className="heading-home-latest border-btm">Hollywood</div>
                         {LatestArticlesArray.filter(function (creature) {
                             return creature.category == "Hollywood"
                         }).map(CreateLatestArticles)}
@@ -56,7 +56,7 @@ function Hollywood() {
 
 
 
-                        <div className="heading-home-latest" >Top Posts</div>
+                        {/* <div className="heading-home-latest" >Top Posts</div>
 
                         <div className="top-post-home margtb2rem">
                             <img src={HomeArticlesImage1} alt="kuch bhi" />
@@ -118,7 +118,7 @@ function Hollywood() {
 
 
 
-                        </div>
+                        </div> */}
                         <div className="advertisement-box">Advertisement</div>
                     </div>
                 </div >

@@ -36,7 +36,7 @@ function Food() {
                 <div className="LatestArticles">
 
                     <div className="articles-left-home">
-                        <div className="heading-home-latest">Food</div>
+                        <div className="heading-home-latest border-btm">Food</div>
                         {LatestArticlesArray.filter(function (creature) {
                             return creature.category == "Food"
                         }).map(CreateLatestArticles)}
@@ -53,7 +53,7 @@ function Food() {
 
 
 
-                        <div className="heading-home-latest" >Top Posts</div>
+                        {/* <div className="heading-home-latest" >Top Posts</div>
 
                         <div className="top-post-home margtb2rem">
                             <img src={HomeArticlesImage1} alt="kuch bhi" />
@@ -115,7 +115,7 @@ function Food() {
 
 
 
-                        </div>
+                        </div> */}
                         <div className="advertisement-box">Advertisement</div>
                     </div>
                 </div >

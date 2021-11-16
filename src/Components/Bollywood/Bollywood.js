@@ -37,7 +37,7 @@ function Bollywood() {
                 <div className="LatestArticles">
 
                     <div className="articles-left-home">
-                        <div className="heading-home-latest">Bollywood</div>
+                        <div className="heading-home-latest border-btm">Bollywood</div>
 
 
                         {LatestArticlesArray.filter(function (creature) {
@@ -57,7 +57,7 @@ function Bollywood() {
 
 
 
-                        <div className="heading-home-latest" >Top Posts</div>
+                        {/* <div className="heading-home-latest" >Top Posts</div>
 
                         <div className="top-post-home margtb2rem">
                             <img src={HomeArticlesImage1} alt="kuch bhi" />
@@ -119,7 +119,7 @@ function Bollywood() {
 
 
 
-                        </div>
+                        </div> */}
                         <div className="advertisement-box">Advertisement</div>
                     </div>
                 </div >

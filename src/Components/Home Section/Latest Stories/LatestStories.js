@@ -26,7 +26,7 @@ function LatestStories() {
         <div className="latest-stories-Container">
             <div className="latest">
 
-                <div className="heading-home-latest">Latest Stories</div>
+                <div className="heading-home-latest border-btm">Latest Stories</div>
 
                 <div className="home-latest-stories-flex">
 

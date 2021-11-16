@@ -51,7 +51,7 @@ function LatestArticles() {
 
     return (
         <div className="LatestArticles-Container">
-            <div className="heading-home-latest">Latest Articles</div>
+            <div className="heading-home-latest border-btm">Latest Articles</div>
             <div className="LatestArticles">
 
                 <div className="articles-left-home">
@@ -107,7 +107,7 @@ function LatestArticles() {
                     <div className="advertisement-box-blog">Advertisement</div>
 
                     <br />
-                    <div className="heading-home-latest" >Top Posts</div>
+                    <div className="heading-home-latest border-btm" >Top Posts</div>
 
                     <div className="top-post-home margtb2rem">
                         <img src={LatestArticlesArray[0].imgURL} alt="kuch bhi" />

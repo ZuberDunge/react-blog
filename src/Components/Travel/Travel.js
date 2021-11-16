@@ -32,7 +32,7 @@ function Travel() {
                 <div className="LatestArticles">
 
                     <div className="articles-left-home">
-                        <div className="heading-home-latest">Travel</div>
+                        <div className="heading-home-latest border-btm">Travel</div>
 
                         {LatestArticlesArray.filter(function (creature) {
                             return creature.category == "Travel"
@@ -52,7 +52,7 @@ function Travel() {
 
 
 
-                        <div className="heading-home-latest" >Top Posts</div>
+                        {/* <div className="heading-home-latest" >Top Posts</div>
 
                         <div className="top-post-home margtb2rem">
                             <img src={HomeArticlesImage1} alt="kuch bhi" />
@@ -114,7 +114,7 @@ function Travel() {
 
 
 
-                        </div>
+                        </div> */}
                         <div className="advertisement-box">Advertisement</div>
                     </div>
                 </div >

@@ -5,3 +5,11 @@
 * {
     box-sizing: border-box;
 }
+
+.border-btm {
+    border-bottom: 5px solid orange;
+    padding-bottom: 0.2rem;
+    margin-bottom: 1rem;
+    width: fit-content;
+    padding-right: 3rem;
+}

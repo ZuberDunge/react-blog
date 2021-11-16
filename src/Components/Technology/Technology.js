@@ -36,7 +36,7 @@ function Technology() {
                 <div className="LatestArticles">
 
                     <div className="articles-left-home">
-                        <div className="heading-home-latest">Technology</div>
+                        <div className="heading-home-latest border-btm">Technology</div>
 
                         {LatestArticlesArray.filter(function (creature) {
                             return creature.category == "Technology"
@@ -56,7 +56,7 @@ function Technology() {
 
 
 
-
+                        {/* 
                         <div className="heading-home-latest" >Top Posts</div>
 
                         <div className="top-post-home margtb2rem">
@@ -119,7 +119,7 @@ function Technology() {
 
 
 
-                        </div>
+                        </div> */}
                         <div className="advertisement-box">Advertisement</div>
                     </div>
                 </div >

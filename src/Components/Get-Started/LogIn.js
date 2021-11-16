@@ -23,7 +23,7 @@ function LogIn() {
         <>
 
             <div className="Log-in">
-                <h2 >Welcome Back!</h2>
+                <h2 className="border-btm">Welcome Back!</h2>
                 {isValid ? <h2 >Welcome Back!</h2> :
                     <form className="login-form">
                         <input required
