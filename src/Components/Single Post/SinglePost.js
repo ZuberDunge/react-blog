@@ -25,9 +25,9 @@ function SinglePost() {
         console.log(clicked);
 
         if (clicked) {
-            setcounter(counter + 1)
-        } else {
             setcounter(counter - 1)
+        } else {
+            setcounter(counter + 1)
         }
 
     }
