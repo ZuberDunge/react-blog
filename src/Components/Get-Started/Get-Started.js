@@ -13,6 +13,7 @@ function GetStarted() {
     const clickHandler = () => setActive((prevState) => !prevState);
 
     const user = localStorage.getItem("user")
+
     let loggedIn = true;
     if (user == null) {
         loggedIn = false;

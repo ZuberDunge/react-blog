@@ -26,10 +26,8 @@
 .hero-cover {
     grid-row-start: 1;
     grid-column-start: 1;
-
     grid-row-end: 3;
     grid-column-end: 2;
-
 }
 
 
@@ -52,10 +50,7 @@
 
 
 .second-cover {
-    /* background-image: url(../../../Images/cover.jpg);
-    background-size: cover; */
     max-height: 300px;
-    /* margin-top: 1rem; */
     border-radius: 0.5rem;
     position: relative;
 }

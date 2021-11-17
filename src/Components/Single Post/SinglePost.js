@@ -65,10 +65,15 @@ function SinglePost() {
     }
 
     useEffect(() => {
+
+
         let blog = LatestArticlesArray.find(blog => blog.id === parseInt(id))
         if (blog) {
             setblog(blog)
+            console.log(blog)
         }
+
+
     })
 
     return (
@@ -76,6 +81,7 @@ function SinglePost() {
             <NavBar />
             {
                 blog ? <>
+
                     <div key={blog.id} className="single-post">
                         <div className="single-post-title">
                             {blog.title}

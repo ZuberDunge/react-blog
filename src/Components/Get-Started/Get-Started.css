@@ -85,6 +85,7 @@ input:focus {
 }
 
 .user-details {
+
     height: 300px;
     display: flex;
     flex-direction: column;
@@ -122,4 +123,10 @@ input:focus {
 
 .author-profile {
     width: 120px !important;
+}
+
+.sign-up-btn:hover {
+    color: black;
+    background-color: violet;
+    text-decoration: none;
 }
