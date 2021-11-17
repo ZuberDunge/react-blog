@@ -70,7 +70,7 @@ const LatestArticlesArray = [
     },
     {
         id: 6,
-        author: "Robin",
+        author: "Zuber Dunge",
         imgURL: "https://static.toiimg.com/photo/msid-85122780/85122780.jpg?305039",
         title: "Taylor Swift Winning Hearts : Red (Taylor’s Version) Released",
         desc: "If you haven’t listened to Red, recently or ever, it’s well worth your time; in its ecstatic, expressive vocals, tart humor, vivid imagery, and tender attention to the nuances of love and loss, you’ll find everything that makes Taylor Swift great. But the real draw for her main audience, who already know Red like the back of their hands, is the new material. Some of it is new only in the sense of being newly attached to this album or newly reclaimed by Taylor: “Ronan” was a one-off charity single in 2012; Little Big Town recorded “Better Man,” a stolen rearview glance on the drive away from toxic love, in 2016; and the venom-laced air kiss “Babe” was released by the country duo Sugarland in 2018. Most anticipated is an extended cut of a classic: “All Too Well,” a Red track with an outsize presence in Swift lore.",

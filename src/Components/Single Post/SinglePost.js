@@ -86,19 +86,23 @@ function SinglePost() {
                                         <img src={AuthorAvatar} alt="avatar" />
                                     </div>
                                     <div className="author-details">
-                                        <div className="author-name">
-                                            {blog.author}
-                                        </div>
+                                        <Link to={`/${blog.category}/${blog.id}/${blog.author}`}>
+
+                                            <div className="author-name">
+                                                {blog.author}
+                                            </div>
+                                        </Link>
+
                                         <div className="author-time">
                                             {blog.category} · {blog.time} · {blog.readtime}
                                         </div>
                                     </div>
                                 </div>
                                 <div className="share-btns">
-                                    <i className="fab fa-instagram-square"></i>
-                                    <i className="fab fa-linkedin"></i>
-                                    <i className="fab fa-facebook-square"></i>
-                                    <i className="fab fa-twitter-square"></i>
+
+                                    <a target="_blank" rel="noopener" href="https://www.linkedin.com/shareArticle?mini=true&url=Check%20out%20the%20blog%20&title=&summary=&source="><i className="fab fa-linkedin"></i></a>
+                                    <a target="_blank" rel="noopener" href="https://www.facebook.com/sharer/sharer.php?u=Check%20out%20the%20blog%20"> <i className="fab fa-facebook-square"></i></a>
+                                    <a target="_blank" rel="noopener" href="https://twitter.com/intent/tweet?text=Check%20out%20the%20blog"> <i className="fab fa-twitter-square"></i></a>
                                 </div>
                             </div>
 

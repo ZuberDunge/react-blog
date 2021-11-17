@@ -95,3 +95,31 @@ input:focus {
 .margauto {
     margin: auto !important;
 }
+
+.more-from {
+    margin: 2rem 0;
+}
+
+.home-latest-post-writer {
+    width: 400px;
+}
+
+.home-latest-post-writer img {
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem !important;
+}
+
+
+.home-latest-post-writer .latest-post-title-1 {
+    font-size: 28px;
+}
+
+.author-profile {
+    width: 120px !important;
+}
