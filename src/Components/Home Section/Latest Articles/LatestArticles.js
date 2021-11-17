@@ -55,7 +55,7 @@ function LatestArticles() {
             <div className="LatestArticles">
 
                 <div className="articles-left-home">
-                    {LatestArticlesArray.slice(1, 6).map(CreateLatestArticles)}
+                    {LatestArticlesArray.slice(3, 8).map(CreateLatestArticles)}
 
 
                     <div onClick={() => {
