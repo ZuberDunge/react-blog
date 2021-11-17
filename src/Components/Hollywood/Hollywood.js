@@ -1,5 +1,4 @@
-
-import React from "react";
+import React, { useState } from "react";
 
 import NavBar from '../Nav/Nav';
 import Footer from '../Footer/Footer';
@@ -29,7 +28,7 @@ function CreateLatestArticles(data) {
 
 
 function Hollywood() {
-
+    const [postNumber, setpostNumber] = useState(2)
     return (
         <>
             <NavBar />
@@ -41,11 +40,11 @@ function Hollywood() {
                         <div className="heading-home-latest border-btm">Hollywood</div>
                         {LatestArticlesArray.filter(function (creature) {
                             return creature.category === "Hollywood"
-                        }).map(CreateLatestArticles)}
+                        }).slice(0, postNumber).map(CreateLatestArticles)}
 
 
 
-                        {/* <div className="load-more"> <i class="fas fa-arrow-down"></i> Load More</div> */}
+                        <div onClick={() => setpostNumber(postNumber + 2)} className="load-more"> <i class="fas fa-arrow-down"></i> Load More</div>
 
 
 

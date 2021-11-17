@@ -1,5 +1,5 @@
 import './Bollywood.css';
-import React from "react";
+import React, { useState } from "react";
 import NavBar from '../Nav/Nav';
 import Footer from '../Footer/Footer';
 import LatestArticlesArray from "../Home Section/Latest Articles/LatestArticlesArray";
@@ -27,7 +27,7 @@ function CreateLatestArticles(data) {
 
 
 function Bollywood() {
-
+    const [postNumber, setpostNumber] = useState(2)
     return (
         <>
             <NavBar />
@@ -41,11 +41,11 @@ function Bollywood() {
 
                         {LatestArticlesArray.filter(function (creature) {
                             return creature.category === "Bollywood"
-                        }).map(CreateLatestArticles)}
+                        }).slice(0, postNumber).map(CreateLatestArticles)}
 
 
 
-                        {/* <div className="load-more"> <i class="fas fa-arrow-down"></i> Load More</div> */}
+                        <div onClick={() => setpostNumber(postNumber + 2)} className="load-more"> <i class="fas fa-arrow-down"></i> Load More</div>
 
 
 

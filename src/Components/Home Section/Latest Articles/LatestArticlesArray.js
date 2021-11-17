@@ -122,7 +122,174 @@ const LatestArticlesArray = [
         tags: ["Technology", "Google"],
         readtime: "2 mins read"
     },
+    {
+        id: 11,
+        author: "Zuber Dunge",
+        title: "Dummy Blog 3",
+        imgURL: "https://c.ndtvimg.com/2021-11/bt2fh6i8_rajkummar-rao_625x300_15_November_21.jpg",
+        desc: "Congratulations, Rajkummar Rao and Patralekhaa. The couple got married in Chandigarh, in the presence of a few family members and friends. Rajkummar Rao and Patralekhaa have been dating for over a decade. Sharing the pictures from the wedding, Rajkummar Rao wrote: Finally after 11 years of love, romance, friendship and fun, I got married to my everything today, my soulmate, my best friend, my family.Today there is no greater happiness for me than being called your husband Patralekhaa.Here's to forever .. and beyond. Patralekhaa wrote in her post: I got married to my everything today; my boyfriend, my partner in crime, my family, my soulmate...My best friend for the last 11 years! There is no greater feeling than to be your wife! Here's to our forever..",
+        category: "Bollywood",
+        time: " /November 16 2017",
+        tags: ["Rajkumar", "Patralekha"],
+        readtime: "2 mins read"
+    },
+    {
+        id: 12,
+        author: "Zuber Dunge",
+        title: "Dummy Blog 4",
+        imgURL: "https://c.ndtvimg.com/2021-11/bt2fh6i8_rajkummar-rao_625x300_15_November_21.jpg",
+        desc: "Congratulations, Rajkummar Rao and Patralekhaa. The couple got married in Chandigarh, in the presence of a few family members and friends. Rajkummar Rao and Patralekhaa have been dating for over a decade. Sharing the pictures from the wedding, Rajkummar Rao wrote: Finally after 11 years of love, romance, friendship and fun, I got married to my everything today, my soulmate, my best friend, my family.Today there is no greater happiness for me than being called your husband Patralekhaa.Here's to forever .. and beyond. Patralekhaa wrote in her post: I got married to my everything today; my boyfriend, my partner in crime, my family, my soulmate...My best friend for the last 11 years! There is no greater feeling than to be your wife! Here's to our forever..",
+        category: "Bollywood",
+        time: " /November 16 2017",
+        tags: ["Rajkumar", "Patralekha"],
+        readtime: "2 mins read"
+    },
+    {
+        id: 13,
+        author: "Zuber Dunge",
+        imgURL: "https://static.toiimg.com/photo/msid-85122780/85122780.jpg?305039",
+        title: "Dummy Blog 3",
+        desc: "If you haven’t listened to Red, recently or ever, it’s well worth your time; in its ecstatic, expressive vocals, tart humor, vivid imagery, and tender attention to the nuances of love and loss, you’ll find everything that makes Taylor Swift great. But the real draw for her main audience, who already know Red like the back of their hands, is the new material. Some of it is new only in the sense of being newly attached to this album or newly reclaimed by Taylor: “Ronan” was a one-off charity single in 2012; Little Big Town recorded “Better Man,” a stolen rearview glance on the drive away from toxic love, in 2016; and the venom-laced air kiss “Babe” was released by the country duo Sugarland in 2018. Most anticipated is an extended cut of a classic: “All Too Well,” a Red track with an outsize presence in Swift lore.",
+        category: "Hollywood",
+        time: " /November 16, 2021",
+        tags: ["Hollywood", "Music"],
+        readtime: "4 mins read"
+    },
+    {
+        id: 14,
+        author: "James Bond",
+        imgURL: "https://www.hollywoodreporter.com/wp-content/uploads/2021/10/Daniel-Craig-Ana-de-Armas-in-No-Time-to-Die-Everett-H-2021.jpg",
+        title: "Dummy Blog 4",
+        desc: "James Bond is a fictional character created by novelist Ian Fleming in 1953. A British secret agent working for MI6 under the codename 007, he has been portrayed on film by actors Sean Connery, David Niven, George Lazenby, Roger Moore, Timothy Dalton, Pierce Brosnan, and Daniel Craig in twenty-seven productions.",
+        category: "Hollywood",
+        time: " /August 21 2021",
+        tags: ["007", "James Bond"],
+        readtime: "10 mins read"
 
+    },
+    {
+        id: 15,
+        author: "Sahil Dunge",
+        imgURL: "https://images.news18.com/ibnlive/uploads/2021/11/untitled-design-15-16371468153x2.png?impolicy=website&width=510&height=356",
+        title: "Dummy Blog 3",
+        desc: "People in today’s day and age have become very prudent about what they consume. However, with the influx of multiple brands, new foods, and establishments offering various types of edibles, it is crucial to have a system that rates the vivid variety of foods. Researchers at the Friedman School of Nutrition Science and Policy at Tufts University, Boston, Massachusetts, have devised a nutrient profiling system that tallies and weighs the nutritional characteristics, and rates different kinds of foods depending on their effect on the overall health of the body. Monikered as ‘Food Compass,’ this tool has been developed after the research and development done across a period of three years and includes data collected on 8,032 foods and beverages consumed by the American populace, reported Tufts Now - the news website of Tufts University.        “Once you get beyond the general health advice related to food, the public is still oblivious to the method of ranking their meals and the choice of establishments offering food. Therefore, not just consumers, but policymakers and people associated with the food industry aim for guiding people towards healthier food habits,” Dariush Mozaffarian, Dean, Friedman School, was quoted as saying.                The Food Compass developed by the researchers’ analyses various foods and beverages around 54 different characteristics across nine domains. Abiding by the findings of the tool, people can expect a reinforced insight into the science of food, which will, in turn, make it easier for them to decide what to eat to lead a healthy lifestyle.                According to the Food Compass, anything with a score below 30 should be consumed to the minimum, followed by things falling in the range of 31-69, which should be consumed in moderation.   For example, snack and sweet deserts have acquired an average score of 16.4, which means that these edibles should be consumed with a pinch of salt (not literally). Vegetables and fruits have earned a score ranging between 73.9-100, which suggests that these should occupy a major part of your diet. Poultry scored 42.67, beef scored 24.9, while seafood scored 67 on the Food Compass.",
+        category: "Food",
+        time: " /November 17, 2021",
+        tags: ["Food", "Health"],
+        readtime: "3 mins read"
+    },
+    {
+        id: 16,
+        author: "Sahil Dunge",
+        imgURL: "https://images.news18.com/ibnlive/uploads/2021/11/untitled-design-15-16371468153x2.png?impolicy=website&width=510&height=356",
+        title: "Dummy Blog 4",
+        desc: "People in today’s day and age have become very prudent about what they consume. However, with the influx of multiple brands, new foods, and establishments offering various types of edibles, it is crucial to have a system that rates the vivid variety of foods. Researchers at the Friedman School of Nutrition Science and Policy at Tufts University, Boston, Massachusetts, have devised a nutrient profiling system that tallies and weighs the nutritional characteristics, and rates different kinds of foods depending on their effect on the overall health of the body. Monikered as ‘Food Compass,’ this tool has been developed after the research and development done across a period of three years and includes data collected on 8,032 foods and beverages consumed by the American populace, reported Tufts Now - the news website of Tufts University.        “Once you get beyond the general health advice related to food, the public is still oblivious to the method of ranking their meals and the choice of establishments offering food. Therefore, not just consumers, but policymakers and people associated with the food industry aim for guiding people towards healthier food habits,” Dariush Mozaffarian, Dean, Friedman School, was quoted as saying.                The Food Compass developed by the researchers’ analyses various foods and beverages around 54 different characteristics across nine domains. Abiding by the findings of the tool, people can expect a reinforced insight into the science of food, which will, in turn, make it easier for them to decide what to eat to lead a healthy lifestyle.                According to the Food Compass, anything with a score below 30 should be consumed to the minimum, followed by things falling in the range of 31-69, which should be consumed in moderation.   For example, snack and sweet deserts have acquired an average score of 16.4, which means that these edibles should be consumed with a pinch of salt (not literally). Vegetables and fruits have earned a score ranging between 73.9-100, which suggests that these should occupy a major part of your diet. Poultry scored 42.67, beef scored 24.9, while seafood scored 67 on the Food Compass.",
+        category: "Food",
+        time: " /November 17, 2021",
+        tags: ["Food", "Health"],
+        readtime: "3 mins read"
+    },
+
+    {
+        id: 16,
+        author: "Sahil Dunge",
+        imgURL: "https://images.news18.com/ibnlive/uploads/2021/11/untitled-design-15-16371468153x2.png?impolicy=website&width=510&height=356",
+        title: "Dummy Blog 5",
+        desc: "People in today’s day and age have become very prudent about what they consume. However, with the influx of multiple brands, new foods, and establishments offering various types of edibles, it is crucial to have a system that rates the vivid variety of foods. Researchers at the Friedman School of Nutrition Science and Policy at Tufts University, Boston, Massachusetts, have devised a nutrient profiling system that tallies and weighs the nutritional characteristics, and rates different kinds of foods depending on their effect on the overall health of the body. Monikered as ‘Food Compass,’ this tool has been developed after the research and development done across a period of three years and includes data collected on 8,032 foods and beverages consumed by the American populace, reported Tufts Now - the news website of Tufts University.        “Once you get beyond the general health advice related to food, the public is still oblivious to the method of ranking their meals and the choice of establishments offering food. Therefore, not just consumers, but policymakers and people associated with the food industry aim for guiding people towards healthier food habits,” Dariush Mozaffarian, Dean, Friedman School, was quoted as saying.                The Food Compass developed by the researchers’ analyses various foods and beverages around 54 different characteristics across nine domains. Abiding by the findings of the tool, people can expect a reinforced insight into the science of food, which will, in turn, make it easier for them to decide what to eat to lead a healthy lifestyle.                According to the Food Compass, anything with a score below 30 should be consumed to the minimum, followed by things falling in the range of 31-69, which should be consumed in moderation.   For example, snack and sweet deserts have acquired an average score of 16.4, which means that these edibles should be consumed with a pinch of salt (not literally). Vegetables and fruits have earned a score ranging between 73.9-100, which suggests that these should occupy a major part of your diet. Poultry scored 42.67, beef scored 24.9, while seafood scored 67 on the Food Compass.",
+        category: "Food",
+        time: " /November 17, 2021",
+        tags: ["Food", "Health"],
+        readtime: "3 mins read"
+    },
+    {
+        id: 17,
+        author: "Sahil Dunge",
+        imgURL: "https://images.news18.com/ibnlive/uploads/2021/11/untitled-design-15-16371468153x2.png?impolicy=website&width=510&height=356",
+        title: "Dummy Blog 6",
+        desc: "People in today’s day and age have become very prudent about what they consume. However, with the influx of multiple brands, new foods, and establishments offering various types of edibles, it is crucial to have a system that rates the vivid variety of foods. Researchers at the Friedman School of Nutrition Science and Policy at Tufts University, Boston, Massachusetts, have devised a nutrient profiling system that tallies and weighs the nutritional characteristics, and rates different kinds of foods depending on their effect on the overall health of the body. Monikered as ‘Food Compass,’ this tool has been developed after the research and development done across a period of three years and includes data collected on 8,032 foods and beverages consumed by the American populace, reported Tufts Now - the news website of Tufts University.        “Once you get beyond the general health advice related to food, the public is still oblivious to the method of ranking their meals and the choice of establishments offering food. Therefore, not just consumers, but policymakers and people associated with the food industry aim for guiding people towards healthier food habits,” Dariush Mozaffarian, Dean, Friedman School, was quoted as saying.                The Food Compass developed by the researchers’ analyses various foods and beverages around 54 different characteristics across nine domains. Abiding by the findings of the tool, people can expect a reinforced insight into the science of food, which will, in turn, make it easier for them to decide what to eat to lead a healthy lifestyle.                According to the Food Compass, anything with a score below 30 should be consumed to the minimum, followed by things falling in the range of 31-69, which should be consumed in moderation.   For example, snack and sweet deserts have acquired an average score of 16.4, which means that these edibles should be consumed with a pinch of salt (not literally). Vegetables and fruits have earned a score ranging between 73.9-100, which suggests that these should occupy a major part of your diet. Poultry scored 42.67, beef scored 24.9, while seafood scored 67 on the Food Compass.",
+        category: "Food",
+        time: " /November 17, 2021",
+        tags: ["Food", "Health"],
+        readtime: "3 mins read"
+    },
+
+    {
+        id: 18,
+        author: "NDTV",
+        imgURL: "https://simpleflying.com/wp-content/uploads/2021/11/American-Airlines-Boeing-777-323ER-N732AN-1-1-1000x800.jpg",
+        title: "Dummy blog 2",
+        desc: "New Delhi: American Airlines relaunched flights to India this week, nearly a decade after stopping them, looking to capitalise on growing demand for non-stop travel amid the coronavirus pandemic, a senior executive of the airline told Reuters.        With travel demand bouncing back at home, American Airlines wants to expand its international network and India was 'one of the biggest untapped markets' for it, said Tom Lattig, managing director of EMEA sales. 'A lot of customers really want to fly non- stop, particularly as we've come through the pandemic. We know there is huge demand for travel between India and the United States so there is an opportunity right now in the middle of the pandemic to come back,' Lattig said in an interview in New Delhi.       American Airlines, which suspended services to India in 2012, started flying between New Delhi and New York on the weekend and will add flights between India's tech city of Bengaluru and Seattle in March.If it succeeds with those two routes, it will add services to India's financial capital of Mumbai, Lattig said.",
+        category: "Travel",
+        time: " /November 14, 2021",
+        tags: ["Travel", "AirLines"],
+        readtime: "6 mins read"
+    },
+    {
+        id: 19,
+        author: "NDTV",
+        imgURL: "https://simpleflying.com/wp-content/uploads/2021/11/American-Airlines-Boeing-777-323ER-N732AN-1-1-1000x800.jpg",
+        title: "Dummy blog 3",
+        desc: "New Delhi: American Airlines relaunched flights to India this week, nearly a decade after stopping them, looking to capitalise on growing demand for non-stop travel amid the coronavirus pandemic, a senior executive of the airline told Reuters.        With travel demand bouncing back at home, American Airlines wants to expand its international network and India was 'one of the biggest untapped markets' for it, said Tom Lattig, managing director of EMEA sales. 'A lot of customers really want to fly non- stop, particularly as we've come through the pandemic. We know there is huge demand for travel between India and the United States so there is an opportunity right now in the middle of the pandemic to come back,' Lattig said in an interview in New Delhi.       American Airlines, which suspended services to India in 2012, started flying between New Delhi and New York on the weekend and will add flights between India's tech city of Bengaluru and Seattle in March.If it succeeds with those two routes, it will add services to India's financial capital of Mumbai, Lattig said.",
+        category: "Travel",
+        time: " /November 14, 2021",
+        tags: ["Travel", "AirLines"],
+        readtime: "6 mins read"
+    },
+    {
+        id: 20,
+        author: "NDTV",
+        imgURL: "https://simpleflying.com/wp-content/uploads/2021/11/American-Airlines-Boeing-777-323ER-N732AN-1-1-1000x800.jpg",
+        title: "Dummy blog 4",
+        desc: "New Delhi: American Airlines relaunched flights to India this week, nearly a decade after stopping them, looking to capitalise on growing demand for non-stop travel amid the coronavirus pandemic, a senior executive of the airline told Reuters.        With travel demand bouncing back at home, American Airlines wants to expand its international network and India was 'one of the biggest untapped markets' for it, said Tom Lattig, managing director of EMEA sales. 'A lot of customers really want to fly non- stop, particularly as we've come through the pandemic. We know there is huge demand for travel between India and the United States so there is an opportunity right now in the middle of the pandemic to come back,' Lattig said in an interview in New Delhi.       American Airlines, which suspended services to India in 2012, started flying between New Delhi and New York on the weekend and will add flights between India's tech city of Bengaluru and Seattle in March.If it succeeds with those two routes, it will add services to India's financial capital of Mumbai, Lattig said.",
+        category: "Travel",
+        time: " /November 14, 2021",
+        tags: ["Travel", "AirLines"],
+        readtime: "6 mins read"
+    },
+    {
+        id: 21,
+        author: "NDTV",
+        imgURL: "https://simpleflying.com/wp-content/uploads/2021/11/American-Airlines-Boeing-777-323ER-N732AN-1-1-1000x800.jpg",
+        title: "Dummy blog 5",
+        desc: "New Delhi: American Airlines relaunched flights to India this week, nearly a decade after stopping them, looking to capitalise on growing demand for non-stop travel amid the coronavirus pandemic, a senior executive of the airline told Reuters.        With travel demand bouncing back at home, American Airlines wants to expand its international network and India was 'one of the biggest untapped markets' for it, said Tom Lattig, managing director of EMEA sales. 'A lot of customers really want to fly non- stop, particularly as we've come through the pandemic. We know there is huge demand for travel between India and the United States so there is an opportunity right now in the middle of the pandemic to come back,' Lattig said in an interview in New Delhi.       American Airlines, which suspended services to India in 2012, started flying between New Delhi and New York on the weekend and will add flights between India's tech city of Bengaluru and Seattle in March.If it succeeds with those two routes, it will add services to India's financial capital of Mumbai, Lattig said.",
+        category: "Travel",
+        time: " /November 14, 2021",
+        tags: ["Travel", "AirLines"],
+        readtime: "6 mins read"
+    },
+    {
+        id: 22,
+        author: "Sahil Dunge",
+        imgURL: "https://images.indianexpress.com/2021/11/Sonos_Roam_Speaker.jpeg",
+        title: "Dummy blog 6",
+        desc: "Alphabet Inc.’s Google said it’s the rightful owner of patents on ways to keep music playlists in the cloud that form a key component of a lawsuit Sonos Inc. filed over the Google Play Music system. Sonos called that contention “nonsense.”        Sonos, an early proponent of connected home speakers, has claimed that Google gained knowledge of the technology through a partnership to integrate Google Play into the Sonos platform, and then decided to sell its own product line and undercut Sonos on price.              In a court filing Tuesday, the Alphabet unit said “Google, not Sonos, conceived of the cloud queue idea” and thus should be listed as owner and inventor of two of the Sonos patents. It also contends a 2013 Content Integration Agreement prohibits Sonos from claiming ownership of any technology developed during the partnership.",
+        category: "Technology",
+        time: " /November 14, 2021",
+        tags: ["Technology", "Google"],
+        readtime: "2 mins read"
+    },
+    {
+        id: 23,
+        author: "Sahil Dunge",
+        imgURL: "https://images.indianexpress.com/2021/11/Sonos_Roam_Speaker.jpeg",
+        title: "Dummy blog 7",
+        desc: "Alphabet Inc.’s Google said it’s the rightful owner of patents on ways to keep music playlists in the cloud that form a key component of a lawsuit Sonos Inc. filed over the Google Play Music system. Sonos called that contention “nonsense.”        Sonos, an early proponent of connected home speakers, has claimed that Google gained knowledge of the technology through a partnership to integrate Google Play into the Sonos platform, and then decided to sell its own product line and undercut Sonos on price.              In a court filing Tuesday, the Alphabet unit said “Google, not Sonos, conceived of the cloud queue idea” and thus should be listed as owner and inventor of two of the Sonos patents. It also contends a 2013 Content Integration Agreement prohibits Sonos from claiming ownership of any technology developed during the partnership.",
+        category: "Technology",
+        time: " /November 14, 2021",
+        tags: ["Technology", "Google"],
+        readtime: "2 mins read"
+    },
+    {
+        id: 24,
+        author: "Sahil Dunge",
+        imgURL: "https://images.indianexpress.com/2021/11/Sonos_Roam_Speaker.jpeg",
+        title: "Dummy blog 8",
+        desc: "Alphabet Inc.’s Google said it’s the rightful owner of patents on ways to keep music playlists in the cloud that form a key component of a lawsuit Sonos Inc. filed over the Google Play Music system. Sonos called that contention “nonsense.”        Sonos, an early proponent of connected home speakers, has claimed that Google gained knowledge of the technology through a partnership to integrate Google Play into the Sonos platform, and then decided to sell its own product line and undercut Sonos on price.              In a court filing Tuesday, the Alphabet unit said “Google, not Sonos, conceived of the cloud queue idea” and thus should be listed as owner and inventor of two of the Sonos patents. It also contends a 2013 Content Integration Agreement prohibits Sonos from claiming ownership of any technology developed during the partnership.",
+        category: "Technology",
+        time: " /November 14, 2021",
+        tags: ["Technology", "Google"],
+        readtime: "2 mins read"
+    },
 ]
 
 export default LatestArticlesArray;
