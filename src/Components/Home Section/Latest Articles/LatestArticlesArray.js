@@ -101,6 +101,17 @@ const LatestArticlesArray = [
         tags: ["Travel", "AirLines"],
         readtime: "6 mins read"
     },
+    {
+        id: 9,
+        author: "Sahil Dunge",
+        imgURL: "https://images.news18.com/ibnlive/uploads/2021/11/untitled-design-15-16371468153x2.png?impolicy=website&width=510&height=356",
+        title: "How Healthy is the Food You're Eating? Scientists Can Finally Rank It",
+        desc: "eople in today’s day and age have become very prudent about what they consume. However, with the influx of multiple brands, new foods, and establishments offering various types of edibles, it is crucial to have a system that rates the vivid variety of foods. Researchers at the Friedman School of Nutrition Science and Policy at Tufts University, Boston, Massachusetts, have devised a nutrient profiling system that tallies and weighs the nutritional characteristics, and rates different kinds of foods depending on their effect on the overall health of the body. Monikered as ‘Food Compass,’ this tool has been developed after the research and development done across a period of three years and includes data collected on 8,032 foods and beverages consumed by the American populace, reported Tufts Now - the news website of Tufts University.        “Once you get beyond the general health advice related to food, the public is still oblivious to the method of ranking their meals and the choice of establishments offering food. Therefore, not just consumers, but policymakers and people associated with the food industry aim for guiding people towards healthier food habits,” Dariush Mozaffarian, Dean, Friedman School, was quoted as saying.                The Food Compass developed by the researchers’ analyses various foods and beverages around 54 different characteristics across nine domains. Abiding by the findings of the tool, people can expect a reinforced insight into the science of food, which will, in turn, make it easier for them to decide what to eat to lead a healthy lifestyle.                According to the Food Compass, anything with a score below 30 should be consumed to the minimum, followed by things falling in the range of 31-69, which should be consumed in moderation.   For example, snack and sweet deserts have acquired an average score of 16.4, which means that these edibles should be consumed with a pinch of salt (not literally). Vegetables and fruits have earned a score ranging between 73.9-100, which suggests that these should occupy a major part of your diet. Poultry scored 42.67, beef scored 24.9, while seafood scored 67 on the Food Compass.",
+        category: "Food",
+        time: " /November 17, 2021",
+        tags: ["Food", "Health"],
+        readtime: "3 mins read"
+    },
 
 ]
 
