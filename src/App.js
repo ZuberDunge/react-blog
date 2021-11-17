@@ -23,14 +23,8 @@ function App() {
           <Route exact path="/Travel" component={Travel} />
           <Route exact path="/Hollywood" component={Hollywood} />
           <Route exact path="/Food" component={Food} />
-          <Route exact path="/Technology/:id" component={SinglePost} />
-          <Route exact path="/Travel/:id" component={SinglePost} />
           <Route exact path="/:category/:id" component={SinglePost} />
           <Route exact path="/:category/:id/:author" component={WriterProfile} />
-          <Route exact path="/Hollywood/:id" component={SinglePost} />
-          <Route exact path="/Food/:id" component={SinglePost} />
-          <Route exact path="/Bollywood/:id" component={SinglePost} />
-          <Route exact path="/Travel/:id" component={SinglePost} />
           <Route exact path="/GetStarted" component={GetStarted} />
         </Switch>
       </BrowserRouter>

@@ -1,5 +1,4 @@
-import HomeArticlesImage1 from "../../../Images/articles-image.PNG"
-import coverHero from "../../../Images/cover2.jpg"
+
 const LatestArticlesArray = [
     {
         id: 0,

@@ -18,9 +18,6 @@ function LogIn() {
         }
     }
 
-    const clickHandler = () => {
-        setActive((prevState) => !prevState);
-    }
 
 
 

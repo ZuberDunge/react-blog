@@ -5,7 +5,7 @@ import Footer from '../Footer/Footer';
 import "./SinglePost.css"
 import AuthorAvatar from "../../Images/avatar.png"
 import ClapImage from "../../Images/clap.png"
-import { useParams, useNavigate, Link } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import LatestArticlesArray from "../Home Section/Latest Articles/LatestArticlesArray";
 import { useEffect, useState } from "react";
 
@@ -25,6 +25,7 @@ function relatedCards(data) {
                 {data.title}
             </div>
         </Link>
+
 
         <div className="author-details-flex">
             <div className="author-avatar">
@@ -54,7 +55,7 @@ function SinglePost() {
 
     const counterHandler = () => {
         setclicked(!clicked)
-        console.log(clicked);
+
 
         if (clicked) {
             setcounter(counter - 1)
@@ -70,11 +71,11 @@ function SinglePost() {
         let blog = LatestArticlesArray.find(blog => blog.id === parseInt(id))
         if (blog) {
             setblog(blog)
-            console.log(blog)
+
         }
 
 
-    })
+    }, [id])
 
     return (
         <>
@@ -105,9 +106,9 @@ function SinglePost() {
                                 </div>
                                 <div className="share-btns">
 
-                                    <a target="_blank" rel="noopener" href="https://www.linkedin.com/shareArticle?mini=true&url=Check%20out%20the%20blog%20&title=&summary=&source="><i className="fab fa-linkedin"></i></a>
-                                    <a target="_blank" rel="noopener" href="https://www.facebook.com/sharer/sharer.php?u=Check%20out%20the%20blog%20"> <i className="fab fa-facebook-square"></i></a>
-                                    <a target="_blank" rel="noopener" href="https://twitter.com/intent/tweet?text=Check%20out%20the%20blog"> <i className="fab fa-twitter-square"></i></a>
+                                    <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/shareArticle?mini=true&url=Check%20out%20the%20blog%20&title=&summary=&source="><i className="fab fa-linkedin"></i></a>
+                                    <a target="_blank" rel="noreferrer" href="https://www.facebook.com/sharer/sharer.php?u=Check%20out%20the%20blog%20"> <i className="fab fa-facebook-square"></i></a>
+                                    <a target="_blank" rel="noreferrer" href="https://twitter.com/intent/tweet?text=Check%20out%20the%20blog"> <i className="fab fa-twitter-square"></i></a>
                                 </div>
                             </div>
 

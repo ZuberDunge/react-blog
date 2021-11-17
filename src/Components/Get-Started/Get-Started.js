@@ -4,7 +4,6 @@ import NavBar from '../Nav/Nav';
 import Footer from '../Footer/Footer';
 import LogIn from './LogIn';
 import SignUp from './SignUp';
-import { Redirect } from 'react-router';
 import UserProfile from './User';
 
 function GetStarted() {

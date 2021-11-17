@@ -1,4 +1,3 @@
-import LatestImage1 from "../../../Images/sub-latest.PNG"
 
 const LatestArray = [
     {

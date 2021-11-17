@@ -1,11 +1,10 @@
 import './LatestStories.css';
 import React from "react";
-import LatestImage1 from "../../../Images/sub-latest.PNG"
 import LatestArticlesArray from '../Latest Articles/LatestArticlesArray';
 import { Link } from 'react-router-dom';
 
 function createCards(data) {
-    return <div className="home-latest-post">
+    return <div key={data.id} className="home-latest-post">
         <img src={data.imgURL} alt="latest post" />
 
         <Link to={`/${data.category}/${data.id}`}>

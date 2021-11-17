@@ -1,13 +1,14 @@
 import './Intro.css';
 import React from "react";
-import coverHero from "../../../Images/cover2.jpg"
+
 import { Link } from 'react-router-dom';
 import LatestArticlesArray from '../Latest Articles/LatestArticlesArray';
 
 
 
 function createHeroCover(Data) {
-    return <div className="home-hero-title">
+    return <div key={Data.id} className="home-hero-title">
+
         <Link to={`/${Data.category}/${Data.id}`}>
             <div>
                 {Data.title}
@@ -15,10 +16,11 @@ function createHeroCover(Data) {
         </Link>
         <div className="home-hero-title-date">{Data.category}{Data.time}</div>
     </div>
+
 }
 
 function createSecondaryHeroCover(Data) {
-    return <div className="second-cover">
+    return <div key={Data.id} className="second-cover">
         <img className="second-cover-gird-img" src={Data.imgURL} alt="cover=2" />
         <div className="home-second-title">
             <Link to={`/${Data.category}/${Data.id}`}>
@@ -39,7 +41,7 @@ function Intro() {
 
                 <div className="hero-cover">
                     {LatestArticlesArray.filter(function (item) {
-                        return item.id == 0
+                        return item.id === 0
                     }).map(createHeroCover)}
                 </div>
 

@@ -2,7 +2,7 @@ import './Get-Started.css';
 import React, { useState } from "react";
 import LatestArray from "../Home Section/The Latest/LatestArray"
 import { Link } from 'react-router-dom';
-import { Redirect } from 'react-router';
+
 function SignUp() {
     const [userDetails, setuserDetails] = useState({
         fullname: "",

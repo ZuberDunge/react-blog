@@ -3,7 +3,7 @@ import React from "react";
 import NavBar from '../Nav/Nav';
 import Footer from '../Footer/Footer';
 import AuthorAvatar from "../../Images/avatar.png"
-import { useParams, useNavigate, Link } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import LatestArticlesArray from "../Home Section/Latest Articles/LatestArticlesArray";
 import { useEffect, useState } from "react";
 
@@ -14,7 +14,7 @@ function componentDidMount() {
 componentDidMount()
 
 function relatedCards(data) {
-    return <div className="home-latest-post-writer">
+    return <div key={data.id} className="home-latest-post-writer">
 
         <img src={data.imgURL} alt="latest post" />
 
@@ -39,7 +39,7 @@ function WriterProfile() {
         if (blog) {
             setblog(blog)
         }
-    })
+    }, [author])
 
     return (
         <>
@@ -69,7 +69,7 @@ function WriterProfile() {
 
 
                             {LatestArticlesArray.filter(function (creature) {
-                                return creature.author == blog.author
+                                return creature.author === blog.author
                             }).map(relatedCards)}
                         </div>
                     </div>

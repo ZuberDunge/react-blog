@@ -1,6 +1,5 @@
 import './Bollywood.css';
 import React from "react";
-import HomeArticlesImage1 from "../../Images/articles-image.PNG"
 import NavBar from '../Nav/Nav';
 import Footer from '../Footer/Footer';
 import LatestArticlesArray from "../Home Section/Latest Articles/LatestArticlesArray";
@@ -9,7 +8,7 @@ import { Link } from "react-router-dom";
 
 
 function CreateLatestArticles(data) {
-    return <div className="articles-thumbnail">
+    return <div key={data.id} className="articles-thumbnail">
         <img src={data.imgURL} alt="kuchbhi" />
         <div className="article-heading-home-flex">
             <div>
@@ -41,7 +40,7 @@ function Bollywood() {
 
 
                         {LatestArticlesArray.filter(function (creature) {
-                            return creature.category == "Bollywood"
+                            return creature.category === "Bollywood"
                         }).map(CreateLatestArticles)}
 
 

@@ -2,11 +2,11 @@ import './Latest.css';
 import React from "react";
 
 import { Link } from "react-router-dom";
-import LatestArray from './LatestArray';
+
 import LatestArticlesArray from '../Latest Articles/LatestArticlesArray';
 
 function createCards(card) {
-    return <div className="home-latest-post">
+    return <div key={card.id} className="home-latest-post">
         <img src={card.imgURL} alt="latest post" />
 
         <Link to={`/${card.category}/${card.id}`}> <div className="latest-post-title-1">

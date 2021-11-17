@@ -40,6 +40,10 @@
 
 }
 
+.hero-cover img {
+    filter: brightness(0.3);
+}
+
 /* .second-cover-2 {
     background-image: url(../../../Images/cover.jpg);
     background-size: cover;
