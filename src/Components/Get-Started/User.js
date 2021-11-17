@@ -4,10 +4,7 @@ import { Link } from "react-router-dom";
 
 function UserProfile() {
 
-    const logOut = () => {
-        localStorage.removeItem("user")
 
-    }
 
     return (
 
@@ -27,7 +24,7 @@ function UserProfile() {
                         <div>
                             <h6>user@gmail.com</h6>
                         </div>
-                        <Link to="/GetStarted"><button onClick={logOut()} className="login-btn">Log Out</button></Link>
+                        <Link to="/GetStarted"><button onClick={() => localStorage.removeItem("user")} className="login-btn">Log Out</button></Link>
                     </div>
 
                 </div>
