@@ -16,8 +16,6 @@ function GetStarted() {
     let loggedIn = true;
     if (user == null) {
         loggedIn = false;
-    } else {
-        loggedIn = true;
     }
 
 
