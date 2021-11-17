@@ -50,7 +50,7 @@ function SinglePost() {
 
 
     const [clicked, setclicked] = useState(false);
-    var [counter, setcounter] = useState(85)
+    var [counter, setcounter] = useState(0)
 
     const counterHandler = () => {
         setclicked(!clicked)
