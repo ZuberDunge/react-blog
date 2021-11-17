@@ -90,7 +90,7 @@ const LatestArticlesArray = [
         readtime: "4 mins read"
     },
     {
-        id: 8,
+        id: 9,
         author: "NDTV",
         imgURL: "https://simpleflying.com/wp-content/uploads/2021/11/American-Airlines-Boeing-777-323ER-N732AN-1-1-1000x800.jpg",
         title: "American Airlines Bets On 'One Of The Biggest Untapped Markets'- India",
@@ -101,7 +101,7 @@ const LatestArticlesArray = [
         readtime: "6 mins read"
     },
     {
-        id: 9,
+        id: 8,
         author: "Sahil Dunge",
         imgURL: "https://images.news18.com/ibnlive/uploads/2021/11/untitled-design-15-16371468153x2.png?impolicy=website&width=510&height=356",
         title: "How Healthy is the Food You're Eating? Scientists Can Finally Rank It",
