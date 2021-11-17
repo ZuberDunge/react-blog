@@ -71,21 +71,21 @@ function LatestArticles() {
                         </div>
                         <div className="carousel-inner">
                             <div className="carousel-item active">
-                                <img className="low-brigtness radnom5gh415f" src={LatestArticlesArray[0].imgURL} className="d-block w-100" alt="cover" />
+                                <img className="low-brigtness radnom5gh415f" src={LatestArticlesArray[0].imgURL} className="d-block w-90" alt="cover" />
                                 <div className="carousel-caption d-md-block">
                                     <Link to={`/${LatestArticlesArray[0].category}/${LatestArticlesArray[0].id}`}> <h5>{LatestArticlesArray[0].title}</h5></Link>
                                     <p>{LatestArticlesArray[0].category} {LatestArticlesArray[0].time}</p>
                                 </div>
                             </div>
                             <div className="carousel-item ">
-                                <img className="low-brigtness radnom54fgh15f" src={LatestArticlesArray[1].imgURL} className="d-block w-100" alt="sec" />
+                                <img className="low-brigtness radnom54fgh15f" src={LatestArticlesArray[1].imgURL} className="d-block w-90" alt="sec" />
                                 <div className="carousel-caption d-md-block">
                                     <Link to={`/${LatestArticlesArray[1].category}/${LatestArticlesArray[1].id}`}> <h5>{LatestArticlesArray[1].title}</h5></Link>
                                     <p>{LatestArticlesArray[1].category} {LatestArticlesArray[1].time}</p>
                                 </div>
                             </div>
                             <div className="carousel-item ">
-                                <img className="low-brigtness radnom541nhjk5f" src={LatestArticlesArray[2].imgURL} className="d-block w-100" alt="s" />
+                                <img className="low-brigtness radnom541nhjk5f" src={LatestArticlesArray[2].imgURL} className="d-block w-90" alt="s" />
                                 <div className="carousel-caption d-md-block">
                                     <Link to={`/${LatestArticlesArray[2].category}/${LatestArticlesArray[2].id}`}> <h5>{LatestArticlesArray[2].title}</h5></Link>
                                     <p>{LatestArticlesArray[2].category} {LatestArticlesArray[2].time}</p>

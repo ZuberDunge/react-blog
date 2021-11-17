@@ -1,10 +1,10 @@
 import './LatestStories.css';
-import React from "react";
+import React, { useState } from "react";
 import LatestArticlesArray from '../Latest Articles/LatestArticlesArray';
 import { Link } from 'react-router-dom';
 
 function createCards(data) {
-    return <div key={data.id} className="home-latest-post">
+    return <div key={data.id} className="home-latest-post-btm">
         <img src={data.imgURL} alt="latest post" />
 
         <Link to={`/${data.category}/${data.id}`}>
@@ -27,7 +27,7 @@ function createCards(data) {
 
 
 function LatestStories() {
-
+    const [postNumber, setpostNumber] = useState(4)
     return (
         <div className="latest-stories-Container">
             <div className="latest">
@@ -35,8 +35,9 @@ function LatestStories() {
                 <div className="heading-home-latest border-btm">Latest Stories</div>
 
                 <div className="home-latest-stories-flex">
-                    {LatestArticlesArray.slice(1, 4).map(createCards)}
+                    {LatestArticlesArray.slice(1, postNumber).map(createCards)}
                 </div>
+                <div onClick={() => setpostNumber(postNumber + 1)} className="load-more"> <i class="fas fa-arrow-down"></i> Load More</div>
             </div>
         </div >
     );

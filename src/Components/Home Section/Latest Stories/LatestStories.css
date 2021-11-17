@@ -8,6 +8,7 @@
 
 .home-latest-stories-flex {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
     gap: 4rem;
@@ -22,4 +23,12 @@
 
         gap: 2rem;
     }
+}
+
+.home-latest-post-btm {
+    width: 400px;
+}
+
+.w-90 {
+    width: 90%;
 }
