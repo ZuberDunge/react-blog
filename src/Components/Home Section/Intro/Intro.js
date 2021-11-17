@@ -7,16 +7,17 @@ import LatestArticlesArray from '../Latest Articles/LatestArticlesArray';
 
 
 function createHeroCover(Data) {
-    return <div key={Data.id} className="home-hero-title">
+    return <div key={Data.id} style={{ backgroundImage: `url(${Data.imgURL})` }} className="hero-cover">
+        <div className="home-hero-title">
 
-        <Link to={`/${Data.category}/${Data.id}`}>
-            <div>
-                {Data.title}
-            </div>
-        </Link>
-        <div className="home-hero-title-date">{Data.category}{Data.time}</div>
+            <Link to={`/${Data.category}/${Data.id}`}>
+                <div>
+                    {Data.title}
+                </div>
+            </Link>
+            <div className="home-hero-title-date">{Data.category}{Data.time}</div>
+        </div>
     </div>
-
 }
 
 function createSecondaryHeroCover(Data) {
@@ -39,14 +40,14 @@ function Intro() {
         <div className="Intro-Container">
             <div className="intro">
 
-                <div className="hero-cover">
-                    {LatestArticlesArray.filter(function (item) {
-                        return item.id === 0
-                    }).map(createHeroCover)}
-                </div>
+
+                {LatestArticlesArray.filter(function (item) {
+                    return item.id === 1
+                }).map(createHeroCover)}
 
 
-                {LatestArticlesArray.slice(1, 3).map(createSecondaryHeroCover)}
+
+                {LatestArticlesArray.slice(2, 4).map(createSecondaryHeroCover)}
 
 
 

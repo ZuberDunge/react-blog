@@ -27,7 +27,7 @@ function Latest() {
                 <div className="heading-home-latest border-btm">The Latest</div>
 
                 <div className="home-latest-flex">
-                    {LatestArticlesArray.slice(7, 10).map(createCards)}
+                    {LatestArticlesArray.slice(6, 10).map(createCards)}
                 </div>
             </div>
         </div >

@@ -33,15 +33,15 @@
 
 
 .intro .hero-cover {
-    background-image: url(../../../Images/rajukamar-weddding.webp);
+
     background-size: cover;
     border-radius: 0.5rem;
     position: relative;
 
 }
 
-.hero-cover img {
-    filter: brightness(0.3);
+.hero-cover {
+    filter: brightness(0.8);
 }
 
 /* .second-cover-2 {
@@ -74,6 +74,9 @@ img {
 }
 
 .home-hero-title {
+    padding: 0.2rem;
+    border-radius: 0.5rem;
+    background: rgba(0, 0, 0, 0.6);
     font-size: 32px;
     color: white;
     position: absolute;
