@@ -31,13 +31,8 @@ function Intro() {
 
                 <div className="hero-cover">
                     {LatestArticlesArray.filter(function (creature) {
-                        return creature.id == 0
+                        return creature.id == 5
                     }).map(createHeroCover)}
-                    {/* <div className="home-hero-title">
-                        <Link to={`/Travel/${LatestArticlesArray[0].id}`}> <div>{LatestArticlesArray[0].title} </div></Link>
-                        <div className="home-hero-title-date">{LatestArticlesArray[0].time}</div>
-                    </div> */}
-
                 </div>
 
 

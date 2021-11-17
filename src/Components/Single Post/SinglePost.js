@@ -4,10 +4,7 @@ import NavBar from '../Nav/Nav';
 import Footer from '../Footer/Footer';
 import "./SinglePost.css"
 import AuthorAvatar from "../../Images/avatar.png"
-import PostHero from "../../Images/post-hero-img.png"
-import PostSSImage from "../../Images/code-ss-post.png"
 import ClapImage from "../../Images/clap.png"
-import LatestImage1 from "../../Images/sub-latest-single.PNG"
 import { useParams, useNavigate, Link } from "react-router-dom";
 import LatestArticlesArray from "../Home Section/Latest Articles/LatestArticlesArray";
 import { useEffect, useState } from "react";
@@ -50,6 +47,8 @@ function relatedCards(data) {
 function SinglePost() {
     const { id } = useParams();
     const [blog, setblog] = useState(null)
+
+
     const [clicked, setclicked] = useState(false);
     var [counter, setcounter] = useState(85)
 

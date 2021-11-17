@@ -2,7 +2,6 @@
 import React from "react";
 import NavBar from '../Nav/Nav';
 import Footer from '../Footer/Footer';
-
 import AuthorAvatar from "../../Images/avatar.png"
 import { useParams, useNavigate, Link } from "react-router-dom";
 import LatestArticlesArray from "../Home Section/Latest Articles/LatestArticlesArray";
@@ -33,9 +32,7 @@ function relatedCards(data) {
 function WriterProfile() {
     const { author } = useParams();
     const [blog, setblog] = useState(null)
-
-
-
+    const [follow, setfollow] = useState(false)
 
     useEffect(() => {
         let blog = LatestArticlesArray.find(blog => blog.author === author)
@@ -56,7 +53,9 @@ function WriterProfile() {
                             </div>
                             <div className="user-details">
                                 <div>  <h2 className="border-btm"> {blog.author} </h2>
-                                    <button className="login-btn">Follow</button>
+                                    <button
+                                        onClick={() => setfollow(!follow)} className="login-btn">
+                                        {follow ? "Followed" : "Follow"}</button>
                                 </div>
 
                             </div>
