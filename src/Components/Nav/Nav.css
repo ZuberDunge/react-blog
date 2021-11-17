@@ -35,9 +35,10 @@ body {
 }
 
 .nav-list ul {
+    margin: 0;
     list-style-type: none;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     padding-inline-start: 0;
 }
@@ -45,7 +46,7 @@ body {
 .nav-list ul li {
     font-size: 18px;
     font-weight: 500;
-    padding: 0.5rem 2rem;
+    padding: 0.5rem 1.5rem;
 }
 
 .menu-btn {
@@ -98,6 +99,27 @@ body {
         display: block;
         font-size: 25px;
     }
+
+    .web-bg-nav {
+        width: fit-content !important;
+        background-color: white !important;
+    }
+
+    .web-bg-nav a {
+        text-decoration: none;
+        color: black !important;
+    }
+
+    .web-bg-nav a:hover {
+        color: black;
+        border-bottom: 2px solid black !important;
+    }
+
+    .active {
+        font-weight: 600;
+        color: black;
+        border-bottom: 2px solid black !importantk;
+    }
 }
 
 a {
@@ -107,5 +129,26 @@ a {
 
 .active {
     font-weight: 600;
-    border-bottom: 2px solid black;
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+.web-bg-nav {
+    padding: 0.5rem 0;
+    margin: 0 !important;
+    background-color: black;
+    max-width: 1500px;
+    border-radius: 0.5rem;
+    width: 100%;
+    vertical-align: middle;
+    transition: 0.3s;
+}
+
+.web-bg-nav a {
+    color: white;
+}
+
+.web-bg-nav a:hover {
+    color: white;
+    border-bottom: 2px solid white;
 }

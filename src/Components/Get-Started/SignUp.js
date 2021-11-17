@@ -7,7 +7,7 @@ function SignUp() {
         <>
 
             <div className="Log-in">
-                <h2 className="border-btm">Create an Account!</h2>
+                <h2 className="border-btm margauto">Create an Account!</h2>
                 <form className="login-form">
                     {/* <label>Email: </label> */}
                     <input required placeholder="Enter Your Name" type="Name" />

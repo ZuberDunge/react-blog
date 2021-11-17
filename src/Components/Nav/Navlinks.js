@@ -23,10 +23,7 @@ const Navlinks = [
         name: "Food",
         to: "/Food"
     },
-    {
-        name: "Get Started",
-        to: "/GetStarted"
-    },
+
 
 ]
 

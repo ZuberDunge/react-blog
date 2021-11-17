@@ -1,44 +1,50 @@
 import './Get-Started.css';
 import React, { useState } from "react";
+import { Redirect } from 'react-router';
 
 function LogIn() {
 
     const [isValid, setActive] = useState(false)
-    var [emailValue, checkEmail] = useState("")
-    var [passValue, checkPass] = useState("")
+    var [emailValue, setEmail] = useState("")
+    var [passValue, setPass] = useState("")
 
     const checkValid = (e) => {
         e.preventDefault();
-        if (emailValue === "sahil@gmail.com" && passValue === "123") {
-            setActive((prevState) => !prevState);
+        if (emailValue === "a" && passValue === "a") {
+            setActive(true);
+            localStorage.setItem("user", "loggged")
         } else {
             alert("invalid")
         }
     }
 
+    const clickHandler = () => {
+        setActive((prevState) => !prevState);
+    }
 
-    const clickHandler = () => setActive((prevState) => !prevState);
+
 
     return (
         <>
+            {
+                isValid ? <Redirect to="/" /> :
+                    <div className="Log-in">
+                        <h2 className="border-btm margauto">Welcome Back!</h2>
 
-            <div className="Log-in">
-                <h2 className="border-btm">Welcome Back!</h2>
-                {isValid ? <h2 >Welcome Back!</h2> :
-                    <form className="login-form">
-                        <input required
-                            onChange={e => checkEmail(e.target.value)}
-                            placeholder="Enter Your Email" type="email" />
+                        <form className="login-form">
+                            <input required
+                                onChange={e => setEmail(e.target.value)}
+                                placeholder="Enter Your Email" type="email" />
 
-                        <input onChange={e => checkPass(e.target.value)}
-                            required placeholder="Enter Your Password" type="Password" />
+                            <input onChange={e => setPass(e.target.value)}
+                                required placeholder="Enter Your Password" type="Password" />
 
-                        <button type="submit" onClick={checkValid} className="login-btn">Log In</button>
+                            <button type="submit" onClick={checkValid} className="login-btn">Log In</button>
 
 
-                    </form>}
-            </div>
-
+                        </form>
+                    </div>
+            }
 
         </>
     );

@@ -19,7 +19,7 @@ function componentDidMount() {
 componentDidMount()
 
 function relatedCards(data) {
-    return <div className="home-latest-post">
+    return <div key={data.id} className="home-latest-post">
         <div className="related-tags-post">
         </div>
         <img className="thumbanil-img" src={data.imgURL} alt="latest post" />
@@ -77,7 +77,7 @@ function SinglePost() {
             <NavBar />
             {
                 blog ? <>
-                    <div className="single-post">
+                    <div key={blog.id} className="single-post">
                         <div className="single-post-title">
                             {blog.title}
                             <div className="author-flex">

@@ -9,7 +9,7 @@
     height: 100%;
     max-width: 1500px;
     width: 100%;
-    margin: auto;
+    margin: 0.5rem auto;
     gap: 16px 16px;
     display: grid;
     grid-template-columns: 5fr 2fr;
@@ -75,43 +75,43 @@ img {
 }
 
 .home-hero-title {
-    font-size: 40px;
+    font-size: 32px;
     color: white;
     position: absolute;
-    top: 70%;
+    bottom: 10%;
     left: 5%;
 }
 
 .home-hero-title-date {
-    font-size: 18px;
+    font-size: 16px;
     color: #FCFCFC;
     opacity: 0.57;
     text-align: left;
 }
 
 .home-second-title {
-    font-size: 32px;
+    font-size: 26px;
     color: white;
     position: absolute;
     overflow-wrap: break-word;
-    top: 50%;
+    bottom: 10%;
     text-align: left;
     left: 5%;
 }
 
 .home-second-title-date {
-    font-size: 18px;
+    font-size: 14px;
     color: #FCFCFC;
     opacity: 0.57;
     text-align: left;
 }
 
 .home-second-title-2 {
-    font-size: 32px;
+    font-size: 26px;
     color: white;
     text-align: left;
     position: absolute;
-    top: 50%;
+    top: 35%;
     left: 5%;
 }
 

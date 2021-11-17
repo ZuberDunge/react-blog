@@ -26,7 +26,7 @@ function createTopPOst(data) {
 
 
 function CreateLatestArticles(data) {
-    return <div className="articles-thumbnail">
+    return <div key={data.id} className="articles-thumbnail">
         <img src={data.imgURL} alt="kuchbhi" />
         <div className="article-heading-home-flex">
             <div>
@@ -43,8 +43,8 @@ function CreateLatestArticles(data) {
 }
 
 
-function showMore() {
-    LatestArticlesArray.slice(2, 4).map(CreateLatestArticles)
+const showMore = () => {
+
 }
 
 function LatestArticles() {
@@ -58,7 +58,11 @@ function LatestArticles() {
                     {LatestArticlesArray.slice(1, 6).map(CreateLatestArticles)}
 
 
-                    <div onClick={showMore} className="load-more"> <i className="fas fa-arrow-down"></i> Load More</div>
+                    <div onClick={() => {
+                        LatestArticlesArray.slice(2, 4).map(CreateLatestArticles)
+                    }} className="load-more"> <i className="fas fa-arrow-down"></i> Load More
+
+                    </div>
 
 
 

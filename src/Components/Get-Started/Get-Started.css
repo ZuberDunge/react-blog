@@ -38,6 +38,7 @@ input {
 }
 
 .login-btn {
+    background: #cbe1f4;
     margin: 0;
     max-width: 300px;
     width: 100%;
@@ -59,4 +60,38 @@ input:focus {
 
 .text-center {
     text-align: center;
+}
+
+.user-profile {
+
+    max-width: 1000px;
+    width: 100%;
+    margin: 1.5rem auto;
+}
+
+.user-flex {
+    flex-wrap: wrap;
+    max-width: 1000px;
+    width: 100%;
+
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.user-flex img {
+    width: 300px;
+}
+
+.user-details {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+.margauto {
+    margin: auto !important;
 }
