@@ -141,9 +141,10 @@ function SinglePost() {
                                     <div className="author-time">
                                         Writtn by
                                     </div>
-                                    <div className="author-name">
-                                        {blog.author}
-                                    </div>
+                                    <Link to={`/${blog.category}/${blog.id}/${blog.author}`}>
+                                        <div className="author-name">
+                                            {blog.author}
+                                        </div></Link>
                                     <div className="author-time">
                                         {blog.time} · {blog.readtime}
                                     </div>

@@ -58,11 +58,11 @@ function LatestArticles() {
                     {LatestArticlesArray.slice(3, 8).map(CreateLatestArticles)}
 
 
-                    <div onClick={() => {
+                    {/* <div onClick={() => {
                         LatestArticlesArray.slice(2, 4).map(CreateLatestArticles)
                     }} className="load-more"> <i className="fas fa-arrow-down"></i> Load More
 
-                    </div>
+                    </div> */}
 
 
 

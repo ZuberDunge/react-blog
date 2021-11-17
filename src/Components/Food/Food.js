@@ -42,7 +42,7 @@ function Food() {
                         }).map(CreateLatestArticles)}
 
 
-                        <div className="load-more"> <i class="fas fa-arrow-down"></i> Load More</div>
+                        {/* <div className="load-more"> <i class="fas fa-arrow-down"></i> Load More</div> */}
 
 
 
