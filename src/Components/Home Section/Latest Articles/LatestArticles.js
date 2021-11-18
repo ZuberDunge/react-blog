@@ -1,10 +1,7 @@
 import './LatestArticles.css';
 import React, { useState } from "react";
-
 import LatestArticlesArray from './LatestArticlesArray';
-
 import { Link } from "react-router-dom";
-
 
 function createTopPOst(data) {
     return <div key={data.id} className="top-post-section">
@@ -22,7 +19,6 @@ function createTopPOst(data) {
         </div>
     </div>
 }
-
 
 
 function CreateLatestArticles(data) {
@@ -43,21 +39,16 @@ function CreateLatestArticles(data) {
 }
 
 
-
-
 function LatestArticles() {
-
     const [postNumber, setpostNumber] = useState(6);
     return (
         <div className="LatestArticles-Container">
             <div className="heading-home-latest border-btm">Latest Articles</div>
             <div className="LatestArticles">
-
                 <div className="articles-left-home">
                     {LatestArticlesArray.slice(3, postNumber).map(CreateLatestArticles)}
-
-
-                    <div onClick={() => setpostNumber(postNumber + 2)} className="load-more"> <i className="fas fa-arrow-down"></i> Load More
+                    <div onClick={() => setpostNumber(postNumber + 2)} className="load-more">
+                        <i className="fas fa-arrow-down"></i> Load More
 
                     </div>
 
