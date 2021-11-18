@@ -3,6 +3,9 @@ import "./Get-Started.css"
 import { Link } from "react-router-dom";
 import LatestArray from "../Home Section/The Latest/LatestArray";
 import userDP from "../../Images/blogging.png"
+import Avatar from '@mui/material/Avatar';
+import Stack from '@mui/material/Stack';
+import { deepOrange, deepPurple } from '@mui/material/colors';
 
 function UserProfile() {
     return (
@@ -10,7 +13,11 @@ function UserProfile() {
             <div className="user-profile">
                 <div className="user-flex">
                     <div>
-                        <img src={userDP} alt="Jake Peralta" />
+                        <Stack direction="row" spacing={2}>
+
+                            <Avatar sx={{ bgcolor: deepOrange[500], width: 200, height: 200, fontSize: 150 }}>{LatestArray[0].fullname.charAt(0)}</Avatar>
+
+                        </Stack>
                     </div>
                     <div className="user-details">
                         <div className="border-btm">  <h2> {LatestArray[0].fullname}  </h2>

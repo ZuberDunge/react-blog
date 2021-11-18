@@ -2,7 +2,9 @@
 import React from "react";
 import NavBar from '../Nav/Nav';
 import Footer from '../Footer/Footer';
-import AuthorAvatar from "../../Images/avatar.png"
+import Avatar from '@mui/material/Avatar';
+import Stack from '@mui/material/Stack';
+import { deepOrange, deepPurple } from '@mui/material/colors';
 import { useParams, Link } from "react-router-dom";
 import LatestArticlesArray from "../Home Section/Latest Articles/LatestArticlesArray";
 import { useEffect, useState } from "react";
@@ -49,7 +51,11 @@ function WriterProfile() {
                     <div className="user-profile">
                         <div className="user-flex">
                             <div>
-                                <img className="author-profile" src={AuthorAvatar} alt="Jake Peralta" />
+                                <Stack direction="row" spacing={2}>
+
+                                    <Avatar sx={{ bgcolor: deepOrange[500], width: 90, height: 90, fontSize: 65 }}>{blog.author.charAt(0)}</Avatar>
+
+                                </Stack>
                             </div>
                             <div className="user-details">
                                 <div>  <h2 className="border-btm"> {blog.author} </h2>

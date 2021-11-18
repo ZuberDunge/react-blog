@@ -9,10 +9,10 @@ import { useParams, Link } from "react-router-dom";
 import LatestArticlesArray from "../Home Section/Latest Articles/LatestArticlesArray";
 import { useEffect, useState } from "react";
 import Stack from '@mui/material/Stack';
-import Button from '@mui/material/Button';
 import Snackbar from '@mui/material/Snackbar';
 import Alert from '@mui/material/Alert';
-
+import Avatar from '@mui/material/Avatar';
+import { deepOrange, deepPurple } from '@mui/material/colors';
 
 function componentDidMount() {
     window.scrollTo(0, 0);
@@ -111,7 +111,12 @@ function SinglePost() {
                             <div className="author-flex">
                                 <div className="author-details-flex">
                                     <div className="author-avatar">
-                                        <img src={AuthorAvatar} alt="avatar" />
+                                        <Stack direction="row" spacing={2}>
+
+                                            <Avatar sx={{ bgcolor: deepOrange[500], width: 90, height: 90, fontSize: 65 }}>{blog.author.charAt(0)}</Avatar>
+
+                                        </Stack>
+
                                     </div>
                                     <div className="author-details">
                                         <Link to={`/${blog.category}/${blog.id}/${blog.author}`}>
@@ -164,7 +169,11 @@ function SinglePost() {
 
                             <div className="author-details-flex">
                                 <div className="author-avatar">
-                                    <img src={AuthorAvatar} alt="avatar" />
+                                    <Stack direction="row" spacing={2}>
+
+                                        <Avatar sx={{ bgcolor: deepOrange[500], width: 90, height: 90, fontSize: 65 }}>{blog.author.charAt(0)}</Avatar>
+
+                                    </Stack>
                                 </div>
                                 <div className="author-details">
                                     <div className="author-time">

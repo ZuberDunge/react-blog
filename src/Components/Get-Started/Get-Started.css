@@ -77,7 +77,7 @@ input:focus {
     height: 100%;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .user-flex img {
@@ -86,7 +86,7 @@ input:focus {
 
 .user-details {
 
-    height: 250px;
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
