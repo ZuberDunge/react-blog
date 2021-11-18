@@ -4,7 +4,7 @@ import NavBar from '../Nav/Nav';
 import Footer from '../Footer/Footer';
 import Avatar from '@mui/material/Avatar';
 import Stack from '@mui/material/Stack';
-import { deepOrange, deepPurple } from '@mui/material/colors';
+import { deepPurple } from '@mui/material/colors';
 import { useParams, Link } from "react-router-dom";
 import LatestArticlesArray from "../Home Section/Latest Articles/LatestArticlesArray";
 import { useEffect, useState } from "react";
@@ -53,7 +53,7 @@ function WriterProfile() {
                             <div>
                                 <Stack direction="row" spacing={2}>
 
-                                    <Avatar sx={{ bgcolor: deepOrange[500], width: 90, height: 90, fontSize: 65 }}>{blog.author.charAt(0)}</Avatar>
+                                    <Avatar sx={{ bgcolor: deepPurple[500], width: 90, height: 90, fontSize: 65 }}>{blog.author.charAt(0)}</Avatar>
 
                                 </Stack>
                             </div>

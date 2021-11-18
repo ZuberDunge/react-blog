@@ -12,7 +12,7 @@ import Stack from '@mui/material/Stack';
 import Snackbar from '@mui/material/Snackbar';
 import Alert from '@mui/material/Alert';
 import Avatar from '@mui/material/Avatar';
-import { deepOrange, deepPurple } from '@mui/material/colors';
+import { deepPurple } from '@mui/material/colors';
 
 function componentDidMount() {
     window.scrollTo(0, 0);
@@ -52,28 +52,21 @@ function relatedCards(data) {
 function SinglePost() {
     const { id } = useParams();
     const [blog, setblog] = useState(null)
-    const [alert, setalert] = useState(false)
-
 
     const [clicked, setclicked] = useState(false);
     var [counter, setcounter] = useState(0)
-
     const [open, setOpen] = useState(false);
+    const [alert, setalert] = useState(false)
 
-    const handleClick = () => {
-
-    };
 
     const handleClose = (event, reason) => {
         if (reason === 'clickaway') {
             return;
         }
-
         setOpen(false);
     };
 
     const counterHandler = () => {
-
         if (localStorage.getItem("user") !== null) {
             setclicked(!clicked)
             if (clicked) {
@@ -82,8 +75,12 @@ function SinglePost() {
                 setcounter(counter + 1)
             }
         } else {
-            setOpen(true);
             setalert(true)
+            setOpen(true);
+            setTimeout(function () {
+                return setOpen(false)
+            }, 2000);
+
         }
     }
 
@@ -113,7 +110,7 @@ function SinglePost() {
                                     <div className="author-avatar">
                                         <Stack direction="row" spacing={2}>
 
-                                            <Avatar sx={{ bgcolor: deepOrange[500], width: 90, height: 90, fontSize: 65 }}>{blog.author.charAt(0)}</Avatar>
+                                            <Avatar sx={{ bgcolor: deepPurple[500], width: 90, height: 90, fontSize: 65 }}>{blog.author.charAt(0)}</Avatar>
 
                                         </Stack>
 
@@ -171,7 +168,7 @@ function SinglePost() {
                                 <div className="author-avatar">
                                     <Stack direction="row" spacing={2}>
 
-                                        <Avatar sx={{ bgcolor: deepOrange[500], width: 90, height: 90, fontSize: 65 }}>{blog.author.charAt(0)}</Avatar>
+                                        <Avatar sx={{ bgcolor: deepPurple[500], width: 90, height: 90, fontSize: 65 }}>{blog.author.charAt(0)}</Avatar>
 
                                     </Stack>
                                 </div>
