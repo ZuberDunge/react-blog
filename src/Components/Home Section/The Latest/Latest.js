@@ -3,7 +3,7 @@ import React from "react";
 
 import { Link } from "react-router-dom";
 
-import LatestArticlesArray from '../Latest Articles/LatestArticlesArray';
+import ArrayOfBlogs from '../../ArrayOfBlogs/ArrayOfBlogs';
 
 function createCards(card) {
     return <div key={card.id} className="home-latest-post">
@@ -27,7 +27,7 @@ function Latest() {
                 <div className="heading-home-latest border-btm">The Latest</div>
 
                 <div className="home-latest-flex">
-                    {LatestArticlesArray.slice(6, 9).map(createCards)}
+                    {ArrayOfBlogs.slice(6, 9).map(createCards)}
                 </div>
             </div>
         </div >

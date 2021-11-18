@@ -6,7 +6,7 @@ import Avatar from '@mui/material/Avatar';
 import Stack from '@mui/material/Stack';
 import { deepPurple } from '@mui/material/colors';
 import { useParams, Link } from "react-router-dom";
-import LatestArticlesArray from "../Home Section/Latest Articles/LatestArticlesArray";
+import ArrayOfBlogs from "../ArrayOfBlogs/ArrayOfBlogs";
 import { useEffect, useState } from "react";
 
 
@@ -37,7 +37,7 @@ function WriterProfile() {
     const [follow, setfollow] = useState(false)
 
     useEffect(() => {
-        let blog = LatestArticlesArray.find(blog => blog.author === author)
+        let blog = ArrayOfBlogs.find(blog => blog.author === author)
         if (blog) {
             setblog(blog)
         }
@@ -74,7 +74,7 @@ function WriterProfile() {
                         <div className="flex">
 
 
-                            {LatestArticlesArray.filter(function (creature) {
+                            {ArrayOfBlogs.filter(function (creature) {
                                 return creature.author === blog.author
                             }).map(relatedCards)}
                         </div>

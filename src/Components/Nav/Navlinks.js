@@ -1,10 +1,5 @@
 const Navlinks = [
-    {
-        id: 1,
-        category: "Home",
-        name: "Home",
-        to: "/"
-    },
+
     {
         id: 2,
         category: "Bollywood",
@@ -13,7 +8,7 @@ const Navlinks = [
     },
     {
         id: 3,
-        category: "HTechnologyome",
+        category: "Technology",
         name: "Technology",
         to: "/Technology"
     },

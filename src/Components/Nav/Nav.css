@@ -118,7 +118,7 @@ body {
     .active {
         font-weight: 600;
         color: black;
-        border-bottom: 2px solid black !importantk;
+        border-bottom: 2px solid black !important;
     }
 }
 

@@ -3,8 +3,8 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom"
 import Navlinks from "./Navlinks"
 
-function createNavLink(Navlink) {
-    return <li key={Navlink.id}><NavLink exact to={Navlink.to} activeClassName="active">{Navlink.name}</NavLink></li>
+function createNavLink(item) {
+    return <li key={item.id}><NavLink exact to={`/category/${item.category}`} >{item.name}</NavLink></li>
 }
 
 function NavBar() {
@@ -27,13 +27,12 @@ function NavBar() {
                     <div onClick={clickHandler}><i className="fas menu-btn fa-bars" ></i> </div>
 
                     <ul className={isactive ? "show" : ""}>
+                        <li><NavLink exact to="/" activeClassName="active">Home</NavLink></li>
                         {Navlinks.map(createNavLink)}
 
                         <li><NavLink exact to="/GetStarted" activeClassName="active">{loggedIn ? "View Profile" : "Get Started"}</NavLink></li>
                     </ul>
-
                 </div>
-
             </nav >
         </div >
     );

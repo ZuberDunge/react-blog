@@ -6,7 +6,7 @@ import "./SinglePost.css"
 import AuthorAvatar from "../../Images/avatar.png"
 import ClapImage from "../../Images/clap.png"
 import { useParams, Link } from "react-router-dom";
-import LatestArticlesArray from "../Home Section/Latest Articles/LatestArticlesArray";
+import ArrayOfBlogs from "../ArrayOfBlogs/ArrayOfBlogs";
 import { useEffect, useState } from "react";
 import Stack from '@mui/material/Stack';
 import Snackbar from '@mui/material/Snackbar';
@@ -87,7 +87,7 @@ function SinglePost() {
     useEffect(() => {
 
 
-        let blog = LatestArticlesArray.find(blog => blog.id === parseInt(id))
+        let blog = ArrayOfBlogs.find(blog => blog.id === parseInt(id))
         if (blog) {
             setblog(blog)
 
@@ -194,7 +194,7 @@ function SinglePost() {
                     <hr />
                     <div className="single-post-more-flex">
 
-                        {LatestArticlesArray.slice(1, 4).map(relatedCards)}
+                        {ArrayOfBlogs.slice(1, 4).map(relatedCards)}
 
                     </div>
 

@@ -1,8 +1,7 @@
 import './Intro.css';
 import React from "react";
-
 import { Link } from 'react-router-dom';
-import LatestArticlesArray from '../Latest Articles/LatestArticlesArray';
+import ArrayOfBlogs from '../../ArrayOfBlogs/ArrayOfBlogs';
 
 
 
@@ -41,13 +40,13 @@ function Intro() {
             <div className="intro">
 
 
-                {LatestArticlesArray.filter(function (item) {
-                    return item.id === 1
+                {ArrayOfBlogs.filter(function (item) {
+                    return item.id === 3
                 }).map(createHeroCover)}
 
 
 
-                {LatestArticlesArray.slice(2, 4).map(createSecondaryHeroCover)}
+                {ArrayOfBlogs.slice(2, 4).map(createSecondaryHeroCover)}
 
 
 

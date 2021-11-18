@@ -1,4 +1,3 @@
-
 const LatestArray = [
     {
         fullname: "Jake Peralta",

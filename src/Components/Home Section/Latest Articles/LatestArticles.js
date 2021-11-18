@@ -1,6 +1,6 @@
 import './LatestArticles.css';
 import React, { useState } from "react";
-import LatestArticlesArray from './LatestArticlesArray';
+import ArrayOfBlogs from '../../ArrayOfBlogs/ArrayOfBlogs';
 import { Link } from "react-router-dom";
 
 function createTopPOst(data) {
@@ -46,7 +46,7 @@ function LatestArticles() {
             <div className="heading-home-latest border-btm">Latest Articles</div>
             <div className="LatestArticles">
                 <div className="articles-left-home">
-                    {LatestArticlesArray.slice(3, postNumber).map(CreateLatestArticles)}
+                    {ArrayOfBlogs.slice(3, postNumber).map(CreateLatestArticles)}
                     <div onClick={() => setpostNumber(postNumber + 2)} className="load-more">
                         <i className="fas fa-arrow-down"></i> Load More
 
@@ -62,24 +62,24 @@ function LatestArticles() {
                         </div>
                         <div className="carousel-inner">
                             <div className="carousel-item active">
-                                <img className="low-brigtness radnom5gh415f" src={LatestArticlesArray[0].imgURL} className="d-block w-100" alt="cover" />
+                                <img className="low-brigtness radnom5gh415f" src={ArrayOfBlogs[0].imgURL} className="d-block w-100" alt="cover" />
                                 <div className="carousel-caption d-md-block">
-                                    <Link to={`/${LatestArticlesArray[0].category}/${LatestArticlesArray[0].id}`}> <h5>{LatestArticlesArray[0].title}</h5></Link>
-                                    <p>{LatestArticlesArray[0].category} {LatestArticlesArray[0].time}</p>
+                                    <Link to={`/${ArrayOfBlogs[0].category}/${ArrayOfBlogs[0].id}`}> <h5>{ArrayOfBlogs[0].title}</h5></Link>
+                                    <p>{ArrayOfBlogs[0].category} {ArrayOfBlogs[0].time}</p>
                                 </div>
                             </div>
                             <div className="carousel-item ">
-                                <img className="low-brigtness radnom54fgh15f" src={LatestArticlesArray[1].imgURL} className="d-block w-100" alt="sec" />
+                                <img className="low-brigtness radnom54fgh15f" src={ArrayOfBlogs[1].imgURL} className="d-block w-100" alt="sec" />
                                 <div className="carousel-caption d-md-block">
-                                    <Link to={`/${LatestArticlesArray[1].category}/${LatestArticlesArray[1].id}`}> <h5>{LatestArticlesArray[1].title}</h5></Link>
-                                    <p>{LatestArticlesArray[1].category} {LatestArticlesArray[1].time}</p>
+                                    <Link to={`/${ArrayOfBlogs[1].category}/${ArrayOfBlogs[1].id}`}> <h5>{ArrayOfBlogs[1].title}</h5></Link>
+                                    <p>{ArrayOfBlogs[1].category} {ArrayOfBlogs[1].time}</p>
                                 </div>
                             </div>
                             <div className="carousel-item ">
-                                <img className="low-brigtness radnom541nhjk5f" src={LatestArticlesArray[2].imgURL} className="d-block w-100" alt="s" />
+                                <img className="low-brigtness radnom541nhjk5f" src={ArrayOfBlogs[2].imgURL} className="d-block w-100" alt="s" />
                                 <div className="carousel-caption d-md-block">
-                                    <Link to={`/${LatestArticlesArray[2].category}/${LatestArticlesArray[2].id}`}> <h5>{LatestArticlesArray[2].title}</h5></Link>
-                                    <p>{LatestArticlesArray[2].category} {LatestArticlesArray[2].time}</p>
+                                    <Link to={`/${ArrayOfBlogs[2].category}/${ArrayOfBlogs[2].id}`}> <h5>{ArrayOfBlogs[2].title}</h5></Link>
+                                    <p>{ArrayOfBlogs[2].category} {ArrayOfBlogs[2].time}</p>
                                 </div>
                             </div>
                         </div>
@@ -102,19 +102,19 @@ function LatestArticles() {
                     <div className="heading-home-latest border-btm" >Top Posts</div>
 
                     <div className="top-post-home margtb2rem">
-                        <img src={LatestArticlesArray[0].imgURL} alt="kuch bhi" />
+                        <img src={ArrayOfBlogs[0].imgURL} alt="kuch bhi" />
 
-                        <Link to={`/${LatestArticlesArray[0].category}/${LatestArticlesArray[0].id}`}>    <div className="latest-post-title-1 margtop1rem">
-                            {LatestArticlesArray[0].title}
+                        <Link to={`/${ArrayOfBlogs[0].category}/${ArrayOfBlogs[0].id}`}>    <div className="latest-post-title-1 margtop1rem">
+                            {ArrayOfBlogs[0].title}
                         </div></Link>
 
                         <div className="margtop1rem">
-                            <span className="latest-home-type ">{LatestArticlesArray[0].category}</span>
-                            <span className="latest-home-date">{LatestArticlesArray[0].time}</span>
+                            <span className="latest-home-type ">{ArrayOfBlogs[0].category}</span>
+                            <span className="latest-home-date">{ArrayOfBlogs[0].time}</span>
                         </div>
 
 
-                        {LatestArticlesArray.slice(6, 9).map(createTopPOst)}
+                        {ArrayOfBlogs.slice(6, 9).map(createTopPOst)}
 
 
 

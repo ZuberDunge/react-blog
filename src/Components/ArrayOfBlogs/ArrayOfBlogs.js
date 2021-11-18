@@ -1,5 +1,5 @@
 
-const LatestArticlesArray = [
+const ArrayofBlogs = [
     {
         id: 0,
         author: "Zuber Dunge",
@@ -292,4 +292,4 @@ const LatestArticlesArray = [
     },
 ]
 
-export default LatestArticlesArray;
+export default ArrayofBlogs;

@@ -1,6 +1,6 @@
 import './LatestStories.css';
 import React, { useState } from "react";
-import LatestArticlesArray from '../Latest Articles/LatestArticlesArray';
+import ArrayOfBlogs from '../../ArrayOfBlogs/ArrayOfBlogs';
 import { Link } from 'react-router-dom';
 
 function createCards(data) {
@@ -35,7 +35,7 @@ function LatestStories() {
                 <div className="heading-home-latest border-btm">Latest Stories</div>
 
                 <div className="home-latest-stories-flex">
-                    {LatestArticlesArray.slice(1, postNumber).map(createCards)}
+                    {ArrayOfBlogs.slice(1, postNumber).map(createCards)}
                 </div>
                 <div onClick={() => setpostNumber(postNumber + 1)} className="load-more"> <i class="fas fa-arrow-down"></i> Load More</div>
             </div>
