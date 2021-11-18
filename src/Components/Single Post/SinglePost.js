@@ -8,6 +8,10 @@ import ClapImage from "../../Images/clap.png"
 import { useParams, Link } from "react-router-dom";
 import LatestArticlesArray from "../Home Section/Latest Articles/LatestArticlesArray";
 import { useEffect, useState } from "react";
+import Stack from '@mui/material/Stack';
+import Button from '@mui/material/Button';
+import Snackbar from '@mui/material/Snackbar';
+import Alert from '@mui/material/Alert';
 
 
 function componentDidMount() {
@@ -48,21 +52,39 @@ function relatedCards(data) {
 function SinglePost() {
     const { id } = useParams();
     const [blog, setblog] = useState(null)
+    const [alert, setalert] = useState(false)
 
 
     const [clicked, setclicked] = useState(false);
     var [counter, setcounter] = useState(0)
 
-    const counterHandler = () => {
-        setclicked(!clicked)
+    const [open, setOpen] = useState(false);
 
+    const handleClick = () => {
 
-        if (clicked) {
-            setcounter(counter - 1)
-        } else {
-            setcounter(counter + 1)
+    };
+
+    const handleClose = (event, reason) => {
+        if (reason === 'clickaway') {
+            return;
         }
 
+        setOpen(false);
+    };
+
+    const counterHandler = () => {
+
+        if (localStorage.getItem("user") !== null) {
+            setclicked(!clicked)
+            if (clicked) {
+                setcounter(counter - 1)
+            } else {
+                setcounter(counter + 1)
+            }
+        } else {
+            setOpen(true);
+            setalert(true)
+        }
     }
 
     useEffect(() => {
@@ -127,7 +149,13 @@ function SinglePost() {
                                 </span>
 
                             </div>
-
+                            {alert ? <div className="Snackbar">
+                                <Snackbar open={open} autoHideDuration={2000} onClose={handleClose}>
+                                    <Alert onClose={handleClose} severity="error" sx={{ width: '300px' }}>
+                                        LogIn to Hit Like
+                                    </Alert>
+                                </Snackbar></div>
+                                : null}
                             <div className="claps-flex">
                                 <img onClick={counterHandler} src={ClapImage} alt="likes" />
                                 <span>{counter} Claps</span>
@@ -166,6 +194,7 @@ function SinglePost() {
 
                 </> : null
             }
+
             <Footer />
         </>
     );

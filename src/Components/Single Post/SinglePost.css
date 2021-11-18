@@ -134,6 +134,11 @@ hr {
 
 
 @media screen and (max-width: 700px) {
+    .css-cpgvjg-MuiSnackbar-root {
+        top: -56% !important;
+
+    }
+
     .author-flex {
         margin: 0;
         justify-content: center;
@@ -156,4 +161,12 @@ hr {
 
 .position-relative {
     position: relative;
+}
+
+
+
+.css-cpgvjg-MuiSnackbar-root {
+    top: -56% !important;
+    right: 10% !important;
+    left: 10% !important;
 }
