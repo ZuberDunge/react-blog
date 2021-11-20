@@ -41,7 +41,7 @@ function Intro() {
 
 
                 {ArrayOfBlogs.filter(function (item) {
-                    return item.id === 0
+                    return item.id === 1
                 }).map(createHeroCover)}
 
 
