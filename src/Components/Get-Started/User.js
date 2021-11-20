@@ -13,7 +13,8 @@ function UserProfile() {
                 <div className="user-flex">
                     <div>
                         <Stack direction="row" spacing={2}>
-                            <Avatar sx={{ bgcolor: deepPurple[500], width: 200, height: 200, fontSize: 150 }}>{LatestArray[0].fullname.charAt(0)}</Avatar>
+                            <Avatar sx={{ bgcolor: deepPurple[500], width: 200, height: 200, fontSize: 150 }}>
+                                {LatestArray[0].fullname.charAt(0).toUpperCase()}</Avatar>
                         </Stack>
                     </div>
                     <div className="user-details">
